@@ -4,7 +4,7 @@
 // library can't include another library that includes another library   *
 // and so on.                                                            *
 // Athugid ad setja snuningsAtt i RobotFunctions.h a -1 ef servomotor    *
-// er orvhentur     test     aron                                                 *
+// er orvhentur     test     aron       rauðhærður                                          *
 //***********************************************************************/
 #include "Arduino.h"
 #include <TimerOne.h>
