@@ -1,0 +1,336 @@
+body {
+	margin: 0px; text-align: center; color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; border-top-color: rgb(255, 255, 255); border-top-width: 0px; border-top-style: solid; background-repeat: repeat; background-color: rgb(204, 204, 204);
+}
+#rap {
+	background: rgb(255, 255, 255); padding: 0px; border: 1px solid rgb(0, 0, 153); width: 1000px; text-align: left; margin-right: auto; margin-left: auto;
+}
+#sidebar {
+	background: rgb(255, 255, 255); border-width: 0px 1px 0px 0px; font: 70%/125% "Lucida Grande", Verdana, arial, sans-serif; margin: 0px; width: 190px; height: 2000px; color: rgb(153, 153, 255); letter-spacing: 0px; padding-top: 20px; padding-right: 0px; padding-left: 0px; border-right-color: rgb(153, 153, 153); border-left-color: currentColor; border-right-style: solid; border-left-style: none; float: left; font-size-adjust: none; font-stretch: normal;
+}
+#sidebar a {
+	color: rgb(0, 102, 204); text-decoration: none;
+}
+#sidebar a:hover {
+	color: rgb(17, 68, 119); text-decoration: underline;
+}
+#content {
+	width: 610px; height: 2015px; text-align: left; padding-top: 5px; padding-right: 10px; padding-left: 10px; float: left; background-color: rgb(255, 255, 255);
+}
+#content-no-sidebar {
+	width: 555px; text-align: left; padding-top: 20px; padding-right: 25px; padding-left: 5px; margin-right: auto; margin-left: auto; background-color: rgb(255, 255, 255);
+}
+#columnRight {
+	background: rgb(255, 255, 255); border-width: 0px 1px; font: 100%/125% "Lucida Grande", Verdana, arial, sans-serif; margin: 0px; width: 165px; height: 2000px; color: rgb(51, 51, 51); letter-spacing: 0px; padding-top: 20px; padding-right: 7px; padding-left: 5px; border-right-color: rgb(255, 255, 255); border-left-color: rgb(153, 153, 153); border-right-style: solid; border-left-style: solid; float: left; font-size-adjust: none; font-stretch: normal;
+}
+#benfooter {
+	margin: 0px auto; padding: 9px 0px; width: 960px; text-align: center; color: rgb(183, 204, 216); line-height: 1.25em; clear: both; font-size: 0.8em; border-top-color: rgb(235, 186, 71); border-top-width: 3px; border-top-style: solid; background-color: rgb(40, 58, 69);
+}
+#container {
+	background: rgb(255, 255, 255); margin: 0px auto; padding: 0px; width: 1000px;
+}
+#content2colLg {
+	width: 998px; overflow: auto; border-right-color: rgb(51, 51, 51); border-left-color: rgb(51, 51, 51); border-right-width: 1px; border-left-width: 1px; border-right-style: solid; border-left-style: solid; background-image: url("../image-files/grey2colbackground.gif"); background-repeat: repeat-y;
+}
+#content2colLy {
+	width: 998px; overflow: auto; border-right-color: rgb(51, 51, 51); border-left-color: rgb(51, 51, 51); border-right-width: 1px; border-left-width: 1px; border-right-style: solid; border-left-style: solid; background-image: url("../image-files/yellow2colbackground.gif"); background-repeat: repeat-y; TEXT-ALGIN: left;
+}
+#content3colLg {
+	width: 998px; text-align: left; overflow: auto; border-right-color: rgb(51, 51, 51); border-left-color: rgb(51, 51, 51); border-right-width: 1px; border-left-width: 1px; border-right-style: solid; border-left-style: solid; background-image: url("../image-files/grey3colbackground.gif"); background-repeat: repeat-y;
+}
+#content3colLy {
+	width: 998px; overflow: auto; border-right-color: rgb(51, 51, 51); border-left-color: rgb(51, 51, 51); border-right-width: 1px; border-left-width: 1px; border-right-style: solid; border-left-style: solid; background-image: url("../image-files/yellow3colbackground.gif"); background-repeat: repeat-y; TEXT-ALGN: left;
+}
+#mid3colContent {
+	padding: 10px; width: 625px; text-align: left; float: right;
+}
+#leftColYellow {
+	padding: 0px; width: 180px; text-align: left; font-size: 12px;
+}
+#right2colContent {
+	padding: 10px; width: 795px; text-align: left; float: right;
+}
+#leftColGrey {
+	padding: 0px; width: 180px; font-size: 12px;
+}
+#AdSense160x600 {
+	border: 1px solid rgb(102, 102, 102); width: 160px; height: 600px; background-color: rgb(255, 255, 153);
+}
+#header {
+	width: 1000px; height: 188px; position: relative; background-image: url("../image-files/gtcom_hdr_1000v3.gif");
+}
+#date {
+	left: 10px; top: 138px; color: rgb(0, 0, 0); font-size: 70%; font-weight: bold; position: relative; z-index: 100;
+}
+#main {
+	background: rgb(255, 255, 255); border-right-color: rgb(51, 51, 51); border-bottom-color: rgb(51, 51, 51); border-left-color: rgb(51, 51, 51); border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-right-style: solid; border-bottom-style: solid; border-left-style: solid;
+}
+#mainb {
+	background: rgb(255, 255, 255); border-left-color: rgb(61, 61, 92); border-left-width: 1px; border-left-style: solid;
+}
+#leftcolumn {
+	width: 180px; border-right-color: rgb(51, 51, 51); border-right-width: 1px; border-right-style: solid;
+}
+#midcontent {
+	padding: 10px;
+}
+#rightcolumn {
+	width: 180px; border-left-color: rgb(51, 51, 51); border-left-width: 1px; border-left-style: solid;
+}
+.line {
+	margin: 0px; padding: 0px; line-height: 0; font-size: 1px; background-color: rgb(210, 156, 26);
+}
+.title {
+	margin: 1px; padding: 1px; line-height: 12px; font-size: 12px;
+}
+.headertitle {
+	margin: 1px; padding: 1px; color: rgb(0, 0, 102); line-height: 20px; font-family: Arial, Helvetica, sans-serif; font-size: 18px; font-weight: bold;
+}
+.box1 {
+	background: rgb(81, 104, 118); padding: 3px; border: 1px solid rgb(255, 255, 255); color: rgb(51, 51, 51);
+}
+.box2 {
+	background: rgb(255, 255, 204); padding: 3px; border: 1px solid rgb(255, 255, 255);
+}
+.box3 {
+	background: rgb(204, 204, 255); padding: 3px;
+}
+.box3text {
+	font-family: Arial, Helvetica, sans-serif; font-size: 10px;
+}
+.MenuText {
+	font-family: Arial, Helvetica, sans-serif; font-size: 10px;
+}
+.box4 {
+	background: rgb(255, 255, 255); padding: 3px;
+}
+.box5 {
+	background: rgb(255, 255, 204); padding: 3px;
+}
+.box5text {
+	font-family: Arial, Helvetica, sans-serif; font-size: 10px;
+}
+.box6 {
+	background: rgb(241, 241, 241); padding: 3px;
+}
+.box6text {
+	font-family: Arial, Helvetica, sans-serif; font-size: 10px;
+}
+td {
+	padding: 0px; text-align: left; line-height: 18px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px;
+}
+p {
+	margin: 3px 0px; padding: 10px 0px 3px; line-height: 16px; font-size: 12px;
+}
+.box3text {
+	font-family: Arial, Helvetica, sans-serif; font-size: 12px;
+}
+.small {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 11px;
+}
+.justified {
+	text-align: justify; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+h1 {
+	padding: 35px; font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+	padding-top: 35px; font-family: Arial, Helvetica, sans-serif;
+}
+h3 {
+	font-family: Arial, Helvetica, sans-serif;
+}
+h4 {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+h5 {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+h1 {
+	margin: 1px; padding: 10px 1px; color: rgb(0, 0, 102); line-height: 26px; font-family: Arial, Helvetica, sans-serif; font-size: 20px; border-bottom-color: rgb(153, 0, 0); border-bottom-width: 2px; border-bottom-style: solid;
+}
+h2 {
+	margin: 3px 0px; padding: 3px 0px; color: rgb(255, 102, 0); line-height: 26px; font-family: Arial, Helvetica, sans-serif; font-size: 20px;
+}
+h3 {
+	margin: 3px 0px; padding: 3px 0px; color: rgb(0, 0, 0); font-size: 16px;
+}
+ul {
+	font-size: 12px; FONT-FAMIL: Arial, Helvetica;
+}
+#navcontainer {
+	background: rgb(81, 104, 118);
+}
+#navcontainer ul {
+	padding-left: 0px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; margin-left: 0px; list-style-type: none;
+}
+#navcontainer a {
+	background: rgb(81, 104, 118); padding: 5px 1px; width: 170px; border-bottom-color: rgb(210, 156, 26); border-bottom-width: 1px; border-bottom-style: solid; display: block;
+}
+#navcontainer a:link {
+	color: rgb(255, 255, 255); font-weight: bold; text-decoration: none;
+}
+.navlist a:visited {
+	color: rgb(255, 255, 255); font-weight: bold; text-decoration: none;
+}
+#navcontainer a:hover {
+	background: rgb(142, 167, 180); color: rgb(100, 67, 34);
+}
+#navcontainer a:visited {
+	color: rgb(255, 255, 255); font-weight: bold; text-decoration: none;
+}
+a:link {
+	color: rgb(0, 0, 204); font-weight: normal; text-decoration: underline;
+}
+a:visited {
+	color: rgb(0, 0, 204); font-weight: normal; text-decoration: underline;
+}
+a:hover {
+	color: rgb(210, 41, 41); text-decoration: none;
+}
+.formfield {
+	border: 1px solid rgb(153, 153, 153); color: rgb(210, 41, 41); text-indent: 0.2em; letter-spacing: 0.1em; font-family: verdana, arial, helvetica, geneva, sans-serif; font-size: 11px; background-color: rgb(247, 247, 247);
+}
+.inline {
+	padding: 0px 5px 0px 0px; float: left; display: inline;
+}
+.redtext {
+	color: rgb(210, 41, 41); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold;
+}
+#topbanner {
+	left: 489px; top: 49px; width: 472px; height: 60px; margin-right: auto; margin-left: auto; position: absolute;
+}
+#topbanner img {
+	border-width: 0px; margin-top: 8px; margin-right: 1px; margin-left: 15px; display: block;
+}
+#horiztab {
+	width: 1000px; margin-right: auto; margin-left: auto;
+}
+.horiztab {
+	width: 100%; overflow: hidden; border-bottom-color: black; border-bottom-width: 0px; border-bottom-style: solid;
+}
+.horiztab ul {
+	font: bold 12px/normal Verdana; margin: 0px; padding: 0px 0px 0px 1px; left: 0px; top: 160px; right: 0px; list-style-type: none; position: absolute; font-size-adjust: none; font-stretch: normal; background-image: url("../image-files/subTitle_bg.jpg");
+}
+.horiztab li {
+	margin: 0px; display: inline; background-image: url("../image-files/subTitle_bg.jpg");
+}
+.horiztab li a {
+	background: url("../image-files/subTitle_bg.jpg"); margin: 0px; padding: 7px 8px; color: rgb(0, 0, 51); text-decoration: none; border-left-color: white; border-left-width: 1px; border-left-style: solid; float: left; display: block;
+}
+.horiztab li a:visited {
+	color: rgb(0, 0, 51); background-image: url("../image-files/subTitle_bg.jpg");
+}
+.horiztab li a:hover {
+	color: rgb(255, 255, 255);
+}
+.horiztab li.selected a {
+	background: rgb(210, 41, 41); color: rgb(255, 255, 255);
+}
+.popupWin {
+	background: url("../image-files/popup_bg.jpg") repeat-x left top; padding: 5px 5px 10px; border: 1px solid black; top: 370px; width: 130px; text-align: center; right: 45%; display: none; position: absolute;
+}
+.popupHead {
+	padding: 6px 3px; color: rgb(255, 255, 255); font-size: 14px; background-color: rgb(0, 0, 0);
+}
+.popupText {
+	padding: 6px 3px; font-size: 12px; border-bottom-color: rgb(0, 0, 0); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.popupURL {
+	padding-top: 6px; font-size: 12px;
+}
+.mapText1 {
+	padding: 0px; top: 339px; width: 400px; text-align: left; right: 221px; font-size: 12px; position: absolute;
+}
+.mapText2 {
+	padding: 0px; left: 192px; top: 272px; width: 400px; text-align: left; font-size: 12px; position: absolute;
+}
+.anylinkcss {
+	background: lightyellow; border: 1px solid black; left: 0px; top: 0px; width: 180px; line-height: 18px; font-family: "Arial Black", Gadget, sans-serif; font-size: 12px; visibility: hidden; position: absolute; z-index: 100;
+}
+.anylinkcss ul {
+	margin: 0px; padding: 0px; list-style-type: none;
+}
+.anylinkcss ul li a {
+	padding: 1px 0px; width: 100%; text-align: left; color: rgb(51, 51, 51); text-indent: 5px; font-weight: bold; text-decoration: none; border-bottom-color: black; border-bottom-width: 1px; border-bottom-style: solid; display: block;
+}
+.anylinkcss a:hover {
+	color: white; background-color: rgb(142, 167, 180);
+}
+.anylinkcsscols {
+	font: 12px/normal Verdana; padding: 10px; border: 1px solid black; left: 0px; top: 0px; visibility: hidden; position: absolute; z-index: 100; font-size-adjust: none; font-stretch: normal; background-color: rgb(142, 167, 180);
+}
+.anylinkcsscols .column {
+	width: 350px; float: left;
+}
+.anylinkcsscols .column ul {
+	margin: 0px; padding: 0px; list-style-type: none;
+}
+.anylinkcsscols li {
+	padding-bottom: 0px;
+}
+.anylinkshadow {
+	background: black; left: 0px; top: 0px; visibility: hidden; position: absolute; z-index: 99;
+}
+.urbanbluemenu {
+	width: 180px; background-color: rgb(7, 47, 105);
+}
+.urbanbluemenu .headerbar {
+	background: rgb(0, 0, 0); font: bold 13px/normal Verdana; padding: 7px 0px 2px; color: white; text-transform: uppercase; text-indent: 10px; margin-top: 20px; margin-bottom: 5px; font-size-adjust: none; font-stretch: normal;
+}
+.urbanbluemenu ul {
+	margin: 0px; padding: 0px; list-style-type: none;
+}
+.urbanbluemenu ul li {
+	padding-bottom: 0px;
+}
+.urbanbluemenu ul li a {
+	padding: 5px 0px 5px 8px; text-align: left; color: rgb(255, 255, 255); line-height: 17px; font-family: verdana; font-size: 12px; font-weight: bold; text-decoration: none; border-bottom-color: rgb(204, 153, 51); border-bottom-width: 1px; border-bottom-style: solid; display: block; position: relative; background-color: rgb(7, 47, 105);
+}
+.urbanbluemenu ul li a:visited {
+	color: rgb(255, 255, 255);
+}
+.urbanbluemenu ul li a:hover {
+	color: rgb(255, 255, 255); background-color: rgb(32, 56, 149);
+}
+.tutorialmenu {
+	width: 180px; background-color: rgb(153, 153, 153);
+}
+.tutorialmenu .headerbar {
+	font: bold 13px/normal Verdana; padding: 7px 0px 2px; color: rgb(0, 0, 102); text-transform: uppercase; text-indent: 10px; margin-top: 20px; margin-bottom: 5px; font-size-adjust: none; font-stretch: normal; background-color: rgb(102, 102, 102);
+}
+.tutorialmenu ul {
+	margin: 0px; padding: 0px; list-style-type: none;
+}
+.tutorialmenu ul li {
+	padding-bottom: 0px;
+}
+.tutorialmenu ul li a {
+	padding: 5px 0px 5px 8px; text-align: left; color: rgb(0, 0, 102); line-height: 12px; font-family: verdana; font-size: 11px; font-weight: normal; text-decoration: none; border-bottom-color: rgb(210, 156, 26); border-bottom-width: 1px; border-bottom-style: solid; display: block; position: relative; background-color: rgb(255, 255, 204);
+}
+.tutorialmenu ul li a:visited {
+	color: rgb(0, 0, 102);
+}
+.tutorialmenu ul li a:hover {
+	color: rgb(0, 0, 102); background-color: rgb(255, 255, 153);
+}
+#footer {
+	border: 1px solid rgb(51, 51, 51); width: 998px; height: 70px; position: relative; background-color: rgb(255, 255, 255);
+}
+.subheadertitle {
+	margin: 1px; padding: 1px; color: rgb(51, 153, 51); line-height: 20px; font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: bold;
+}
+.tooltip {
+	border-style: dotted; border-color: rgb(153, 153, 153); margin: 15px; padding: 5px; width: 550px; font-family: Verdana, Geneva, sans-serif; background-color: rgb(207, 226, 199);
+}
+#rightColWhite {
+	padding: 0px; width: 170px; text-align: left; font-size: 12px; float: right;
+}
+#header-adsense {
+	left: 5px; top: 137px; color: rgb(255, 255, 255); font-size: 70%; font-weight: bold; position: relative; z-index: 100;
+}
+ol {
+	font-family: Arial, Helvetica, sans-serif; font-size: 14px;
+}
+.yellotext {
+	color: rgb(255, 204, 51); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold;
+}

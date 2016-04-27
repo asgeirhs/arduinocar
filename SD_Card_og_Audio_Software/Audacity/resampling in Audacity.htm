@@ -1,0 +1,1095 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0049)http://taperssection.com/index.php -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><HTML 
+xmlns="http://www.w3.org/1999/xhtml"><HEAD>
+<META content="text/html; charset=ISO-8859-1" http-equiv="Content-Type">
+<META name="keywords" content="Live Concert Recording, stereo recording, live music, audio recording, microphone, condenser microphones, portable audio recording equipment">
+<META name="description" content="Established in 2002, Taperssection.com is the forum community of live concert recordists. Taperssection is full of archived information and professional recordists who are ready to help you with your live sound recording questions"><TITLE>resampling 
+in Audacity?</TITLE><LINK rel="canonical" href="http://taperssection.com/index.php?topic=145084.0"><LINK 
+rel="stylesheet" type="text/css" href="resampling%20in%20Audacity_files/index.css"><LINK 
+rel="stylesheet" type="text/css" href="resampling%20in%20Audacity_files/print.css" 
+media="print"><LINK rel="image_src" href="http://www.taperssection.com/taperssection_thumb.png"><LINK 
+rel="help" href="http://taperssection.com/index.php?action=help"><LINK rel="search" 
+href="http://taperssection.com/index.php?action=search"><LINK rel="contents" 
+href="http://taperssection.com/index.php"><LINK title="Taperssection.com - RSS" 
+rel="alternate" type="application/rss+xml" href="http://taperssection.com/index.php?type=rss;action=.xml"><LINK 
+rel="prev" href="http://taperssection.com/index.php?topic=145084.0;prev_next=prev"><LINK 
+rel="next" href="http://taperssection.com/index.php?topic=145084.0;prev_next=next"><LINK 
+rel="index" href="http://taperssection.com/index.php?board=5.0">
+<SCRIPT type="text/javascript" src="resampling%20in%20Audacity_files/script.js"></SCRIPT>
+
+<SCRIPT type="text/javascript" src="resampling%20in%20Audacity_files/theme.js"></SCRIPT>
+
+<SCRIPT type="text/javascript"><!-- // --><![CDATA[
+		var smf_theme_url = "http://taperssection.com/Themes/ts4theme";
+		var smf_default_theme_url = "http://www.taperssection.com/Themes/default";
+		var smf_images_url = "http://taperssection.com/Themes/ts4theme/images";
+		var smf_scripturl = "http://taperssection.com/index.php";
+		var smf_iso_case_folding = false;
+		var smf_charset = "ISO-8859-1";
+		var ajax_notification_text = "Loading...";
+		var ajax_notification_cancel_text = "Cancel";
+	// ]]></SCRIPT>
+
+<META name="GENERATOR" content="MSHTML 9.00.8112.16476"></HEAD>
+<BODY>
+<DIV id="bodybg">
+<DIV id="wrapper">
+<DIV id="header"><A title="Taperssection.com" href="http://taperssection.com/index.php"><SPAN 
+id="logo">&nbsp;</SPAN></A>
+<DIV id="searcharea">
+<FORM accept-charset="ISO-8859-1" method="post" action="http://taperssection.com/index.php?action=search2"><INPUT 
+onblur="if(this.value=='') this.value='Search...';" class="inputbox" onfocus="this.value = '';" 
+name="search" value="Search..." type="text"><INPUT name="advanced" value="0" 
+type="hidden"><INPUT name="topic" value="145084" type="hidden"></FORM></DIV>
+<DIV id="news"><B>News: </B><SPAN class="smalltext"><A href="http://taperssection.com/index.php?topic=127540.0">Become 
+a Site Supporter Today!&nbsp; <IMG class="smiley" title="Smiley" border="0" alt=":)" 
+src="resampling%20in%20Audacity_files/smiley.gif"></A></SPAN></DIV>
+<DIV id="userarea" class="clearfix"><SPAN class="userareatextouter"><SPAN class="userareatext">
+<SCRIPT type="text/javascript" src="resampling%20in%20Audacity_files/sha1.js"></SCRIPT>
+
+<FORM id="guest_form" onsubmit="hashLoginPassword(this, 'fd56359f8426e7a58026505923a24afc');" 
+accept-charset="ISO-8859-1" method="post" action="http://taperssection.com/index.php?action=login2">
+<DIV class="info">Please <A href="http://taperssection.com/index.php?action=login">login</A> 
+or <A 
+href="http://taperssection.com/index.php?action=register">register</A>.</DIV><INPUT 
+class="input_text" name="user" size="10" type="text"><INPUT class="input_password" 
+name="passwrd" size="10" type="password"><SELECT name="cookielength"><OPTION 
+  value="60">1 Hour</OPTION><OPTION value="1440">1 Day</OPTION><OPTION value="10080">1 
+  Week</OPTION><OPTION value="43200">1 Month</OPTION><OPTION selected="selected" 
+  value="-1">Forever</OPTION></SELECT><INPUT class="button_submit" value="Login" type="submit"><BR>
+<DIV class="info">Login with username, password and session length</DIV><INPUT 
+name="hash_passwrd" type="hidden"></FORM></SPAN></SPAN></DIV></DIV>
+<DIV id="toolbar">
+<DIV id="menu">
+<UL id="navi">
+  <LI><A class="current" 
+  href="http://taperssection.com/index.php"><SPAN>Home</SPAN></A></LI>
+  <LI><A 
+  href="http://taperssection.com/index.php?action=help"><SPAN>Help</SPAN></A></LI>
+  <LI><A 
+  href="http://taperssection.com/index.php?action=search"><SPAN>Search</SPAN></A></LI>
+  <LI><A 
+  href="http://taperssection.com/index.php?action=login"><SPAN>Login</SPAN></A></LI>
+  <LI><A 
+  href="http://taperssection.com/index.php?action=register"><SPAN>Register</SPAN></A></LI>
+  <LI><A href="http://taperssection.com/index.php?action=profile;area=subscriptions"><SPAN 
+  style="font-weight: bold;">Donate</SPAN></A></LI></UL></DIV></DIV>
+<DIV id="bodyarea">
+<CENTER>
+<SCRIPT type="text/javascript"><!--
+google_ad_client = "pub-6956066368189533";
+/* TS Top Main */
+google_ad_slot = "4467340570";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</SCRIPT>
+
+<SCRIPT type="text/javascript" src="resampling%20in%20Audacity_files/show_ads.js">
+</SCRIPT>
+
+<SCRIPT type="text/javascript"><!--
+google_ad_client = "pub-6956066368189533";
+/* TS Top Main */
+google_ad_slot = "4467340570";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</SCRIPT>
+
+<SCRIPT type="text/javascript" src="resampling%20in%20Audacity_files/show_ads.js">
+</SCRIPT>
+<BR><FONT color="black">Become a <A href="http://taperssection.com/index.php?topic=127540.0">Site 
+Supporter</A> and Never see Ads again!</FONT></CENTER>
+<DIV class="navigate_section">
+<UL>
+  <LI><A 
+  href="http://taperssection.com/index.php"><SPAN>Taperssection.com</SPAN></A>&nbsp;»
+  			</LI>
+  <LI><A href="http://taperssection.com/index.php#c2"><SPAN>Technical 
+  Help</SPAN></A>&nbsp;»			</LI>
+  <LI><A 
+  href="http://taperssection.com/index.php?board=5.0"><SPAN>Post-Processing and 
+  Computers / Internet Devices &amp; Related Activity</SPAN></A>&nbsp;»			</LI>
+  <LI class="last">Topic: 				<A href="http://taperssection.com/index.php?topic=145084.0"><SPAN>resampling 
+  in Audacity?</SPAN></A></LI></UL></DIV><!--Headers--><!--End Headers--><A id="top"></A><A 
+id="msg1867624"></A>
+<DIV class="pagesection">
+<DIV class="nextlinks"><A href="http://taperssection.com/index.php?topic=145084.0;prev_next=prev#new">« 
+previous</A> <A href="http://taperssection.com/index.php?topic=145084.0;prev_next=next#new">next 
+»</A></DIV>
+<DIV class="buttonlist align_right">
+<UL>
+  <LI><A href="http://taperssection.com/index.php?action=printpage;topic=145084.0" 
+  rel="new_win nofollow"><SPAN class="last">Print</SPAN></A></LI></UL></DIV>
+<DIV class="pagelinks align_left">Pages: [<STRONG>1</STRONG>]   &nbsp;&nbsp;<A 
+href="http://taperssection.com/index.php?topic=145084.0#lastPost"><STRONG>Go 
+Down</STRONG></A></DIV></DIV>
+<DIV id="forumposts">
+<DIV class="cat_bar">
+<H3 class="catbg"><IMG alt="" align="bottom" src="resampling%20in%20Audacity_files/normal_post.gif"><SPAN 
+id="author">Author</SPAN><SPAN id="top_subject">Topic: resampling in Audacity? 
+&nbsp;(Read 5557 times)</SPAN></H3></DIV>
+<P id="whoisviewing" class="smalltext">0 Members and 1 Guest are viewing this 
+topic.				</P>
+<FORM style="margin: 0px;" id="quickModForm" onsubmit="return oQuickModify.bInEditMode ? oQuickModify.modifySave('fd56359f8426e7a58026505923a24afc', 'cdd193c4e61') : false" 
+accept-charset="ISO-8859-1" method="post" name="quickModForm" action="http://taperssection.com/index.php?action=quickmod2;topic=145084.0">
+<DIV class="windowbg"><SPAN class="topslice"><SPAN></SPAN></SPAN>
+<DIV class="post_wrapper">
+<DIV class="poster">
+<H4><IMG alt="Offline" src="resampling%20in%20Audacity_files/useroff.gif"><A 
+title="View the profile of brad.bartels" href="http://taperssection.com/index.php?action=profile;u=8593">brad.bartels</A></H4>
+<UL id="msg_1867624_extra_info" class="reset smalltext">
+  <LI><B>Trade Count:  </B>					(<A href="http://taperssection.com/index.php?action=trader&amp;id=8593">2</A>)</LI>
+  <LI class="postgroup">Taperssection Regular</LI>
+  <LI class="stars"><IMG border="0" alt="*" src="resampling%20in%20Audacity_files/star.gif"><IMG 
+  border="0" alt="*" src="resampling%20in%20Audacity_files/star.gif"></LI>
+  <LI style="overflow: auto;" class="avatar"><A href="http://taperssection.com/index.php?action=profile;u=8593"><IMG 
+  class="avatar" border="0" alt="" src="resampling%20in%20Audacity_files/mediafire_com.htm"></A></LI>
+  <LI class="postcount">Posts: 101</LI>
+  <LI class="profile">
+  <UL></UL></LI></UL></DIV>
+<DIV class="postarea">
+<DIV class="flow_hidden">
+<DIV class="keyinfo">
+<DIV class="messageicon"><IMG border="0" alt="" src="resampling%20in%20Audacity_files/xx.gif"></DIV>
+<H5 id="subject_1867624"><A href="http://taperssection.com/index.php?topic=145084.msg1867624#msg1867624" 
+rel="nofollow">resampling in Audacity?</A></H5>
+<DIV class="smalltext">« <STRONG> on:</STRONG> May 03, 2011, 09:07:49 PM »</DIV>
+<DIV id="msg_1867624_quick_mod"></DIV></DIV></DIV>
+<DIV class="post">
+<DIV id="msg_1867624" class="inner">I have a show I recorded at 24-bit / 48000 
+Hz. I pulled it into Audacity (ver 1.2.6) to split the tracks and (I thought) 
+converted to 16-bit / 44100 Hz. I normally record that way for simplicity, but I 
+wanted to try some different / higher rates. From what I've read, I should be 
+able to set my Uncommpressed Export Format to 16-bit WAV to get it from 24-bit 
+to 16-bit. That part seems to be fine. But for the sample frequency from 48000 
+Hz to 44100 Hz, my understanding is that I should change the project sample rate 
+in the lower left-hand corner to 44100 and export the files? When I do that, I 
+get empty audio (~ 3 to 4 sec at the end of a 4 to 5 minute track) at the end of 
+each file. I also exported the same tracks with a default project rate of 48000 
+Hz. Those files do not have the silence at the end and both tracks (the 48000 Hz 
+and the 44100 Hz) are the exact same filesize and length. Nothing seems to be 
+missing from the audio in the 44100 Hz version, so my only conclusion is that 
+Audacity is compressing the audio and speeding it up a little bit? Something is 
+definitely amiss here, could definitely be user error, but does anybody have an 
+idea what might be going on? I've listened to both versions and I can't swear 
+that the 44100 Hz is sped up, but it would seem that would have to be the case. 
+Knowing what I know, I can at least imagine that the 44100 Hz version is 
+slightly faster.<BR><BR>If there is a different / better / correct way to 
+resample from 48000 Hz to 44100 Hz with Audacity that somebody knows about? Any 
+help would be appreciated. Alternatively, I could take the 48000 Hz files and 
+convert them with something else if that is easier, I guess. What do other folks 
+use to resample anything not at 44100 Hz (free, hopefully)? I think I've used 
+Winamp in the past, but I've played around a little bit in there and I can't 
+remember how I did it.</DIV></DIV></DIV>
+<DIV class="moderatorbar">
+<DIV id="modified_1867624" class="smalltext modified"></DIV>
+<DIV class="smalltext reportlinks"><IMG border="0" alt="" src="resampling%20in%20Audacity_files/ip.gif">
+								Logged							</DIV></DIV></DIV><SPAN 
+class="botslice"><SPAN></SPAN></SPAN></DIV>
+<HR class="post_separator">
+<A id="msg1867628"></A>
+<DIV class="windowbg2"><SPAN class="topslice"><SPAN></SPAN></SPAN>
+<DIV class="post_wrapper">
+<DIV class="poster">
+<H4><IMG alt="Offline" src="resampling%20in%20Audacity_files/useroff.gif"><A 
+title="View the profile of flipp" href="http://taperssection.com/index.php?action=profile;u=4710">flipp</A></H4>
+<UL id="msg_1867628_extra_info" class="reset smalltext">
+  <LI class="title">resident curmudgeon</LI>
+  <LI class="membergroup">Site Supporter</LI>
+  <LI><B>Trade Count:  </B>					(<A href="http://taperssection.com/index.php?action=trader&amp;id=4710">11</A>)</LI>
+  <LI class="postgroup">Needs to get out more...</LI>
+  <LI class="stars"><IMG border="0" alt="*" src="resampling%20in%20Audacity_files/badge_support.gif"></LI>
+  <LI style="overflow: auto;" class="avatar"><A href="http://taperssection.com/index.php?action=profile;u=4710"><IMG 
+  class="avatar" border="0" alt="" 
+  src="resampling%20in%20Audacity_files/ok.gif"></A></LI>
+  <LI class="postcount">Posts: 3509</LI>
+  <LI class="profile">
+  <UL></UL></LI></UL></DIV>
+<DIV class="postarea">
+<DIV class="flow_hidden">
+<DIV class="keyinfo">
+<DIV class="messageicon"><IMG border="0" alt="" src="resampling%20in%20Audacity_files/xx.gif"></DIV>
+<H5 id="subject_1867628"><A href="http://taperssection.com/index.php?topic=145084.msg1867628#msg1867628" 
+rel="nofollow">Re: resampling in Audacity?</A></H5>
+<DIV class="smalltext">« <STRONG>Reply #1 on:</STRONG> May 03, 2011, 09:25:37 PM 
+»</DIV>
+<DIV id="msg_1867628_quick_mod"></DIV></DIV></DIV>
+<DIV class="post">
+<DIV id="msg_1867628" class="inner">I haven't used Audacity in quite some time 
+so can't help you with it but for a free, standalone sample rate converter I can 
+recommend r8brain - <A class="bbc_link new_win" href="http://www.voxengo.com/product/r8brain/" 
+target="_blank">http://www.voxengo.com/product/r8brain/</A></DIV></DIV></DIV>
+<DIV class="moderatorbar">
+<DIV id="modified_1867628" class="smalltext modified"></DIV>
+<DIV class="smalltext reportlinks"><IMG border="0" alt="" src="resampling%20in%20Audacity_files/ip.gif">
+								Logged							</DIV></DIV></DIV><SPAN 
+class="botslice"><SPAN></SPAN></SPAN></DIV>
+<HR class="post_separator">
+<A id="msg1867630"></A>
+<DIV class="windowbg"><SPAN class="topslice"><SPAN></SPAN></SPAN>
+<DIV class="post_wrapper">
+<DIV class="poster">
+<H4><IMG alt="Offline" src="resampling%20in%20Audacity_files/useroff.gif"><A 
+title="View the profile of brad.bartels" href="http://taperssection.com/index.php?action=profile;u=8593">brad.bartels</A></H4>
+<UL id="msg_1867630_extra_info" class="reset smalltext">
+  <LI><B>Trade Count:  </B>					(<A href="http://taperssection.com/index.php?action=trader&amp;id=8593">2</A>)</LI>
+  <LI class="postgroup">Taperssection Regular</LI>
+  <LI class="stars"><IMG border="0" alt="*" src="resampling%20in%20Audacity_files/star.gif"><IMG 
+  border="0" alt="*" src="resampling%20in%20Audacity_files/star.gif"></LI>
+  <LI style="overflow: auto;" class="avatar"><A href="http://taperssection.com/index.php?action=profile;u=8593"><IMG 
+  class="avatar" border="0" alt="" src="resampling%20in%20Audacity_files/mediafire_com.htm"></A></LI>
+  <LI class="postcount">Posts: 101</LI>
+  <LI class="profile">
+  <UL></UL></LI></UL></DIV>
+<DIV class="postarea">
+<DIV class="flow_hidden">
+<DIV class="keyinfo">
+<DIV class="messageicon"><IMG border="0" alt="" src="resampling%20in%20Audacity_files/xx.gif"></DIV>
+<H5 id="subject_1867630"><A href="http://taperssection.com/index.php?topic=145084.msg1867630#msg1867630" 
+rel="nofollow">Re: resampling in Audacity?</A></H5>
+<DIV class="smalltext">« <STRONG>Reply #2 on:</STRONG> May 03, 2011, 09:32:39 PM 
+»</DIV>
+<DIV id="msg_1867630_quick_mod"></DIV></DIV></DIV>
+<DIV class="post">
+<DIV id="msg_1867630" class="inner">
+<DIV class="quoteheader">
+<DIV class="topslice_quote"><A href="http://taperssection.com/index.php?topic=145084.msg1867628#msg1867628">Quote 
+from: flipp on May 03, 2011, 09:25:37 PM</A></DIV></DIV>
+<BLOCKQUOTE class="bbc_standard_quote">I haven't used Audacity in quite some 
+  time so can't help you with it but for a free, standalone sample rate 
+  converter I can recommend r8brain - <A class="bbc_link new_win" href="http://www.voxengo.com/product/r8brain/" 
+  target="_blank">http://www.voxengo.com/product/r8brain/</A><BR></BLOCKQUOTE>
+<DIV class="quotefooter">
+<DIV class="botslice_quote"></DIV></DIV><BR><BR>Thanks - I saw that in some 
+other threads and I just downloaded and installed it. I took one of the tracks 
+that I had exported from Audacity at the 48000 Hz sample rate and converted it 
+with the r8brain software. If everything was kosher, the length (in min:sec), 
+should be the same as the original track, shouldn't it? I mean if the speed is 
+correct? The file I got out of the r8brain software is smaller in size, but also 
+3 seconds shorter than the original track. Maybe I need to convert the raw file 
+to 44100 Hz before I even import it into Audacity? I could do that, I'd just 
+have to split everything into tracks again. Kind of a pain, but if that will 
+work, I'd be glad to do it. The recording sounds very nice, I want to get it 
+converted properly.</DIV></DIV></DIV>
+<DIV class="moderatorbar">
+<DIV id="modified_1867630" class="smalltext modified"></DIV>
+<DIV class="smalltext reportlinks"><IMG border="0" alt="" src="resampling%20in%20Audacity_files/ip.gif">
+								Logged							</DIV></DIV></DIV><SPAN 
+class="botslice"><SPAN></SPAN></SPAN></DIV>
+<HR class="post_separator">
+<A id="msg1867636"></A>
+<DIV class="windowbg2"><SPAN class="topslice"><SPAN></SPAN></SPAN>
+<DIV class="post_wrapper">
+<DIV class="poster">
+<H4><IMG alt="Offline" src="resampling%20in%20Audacity_files/useroff.gif"><A 
+title="View the profile of page" href="http://taperssection.com/index.php?action=profile;u=1482">page</A></H4>
+<UL id="msg_1867636_extra_info" class="reset smalltext">
+  <LI class="membergroup">Site Supporter</LI>
+  <LI><B>Trade Count:  </B>					(<A href="http://taperssection.com/index.php?action=trader&amp;id=1482">20</A>)</LI>
+  <LI class="postgroup">Needs to get out more...</LI>
+  <LI class="stars"><IMG border="0" alt="*" src="resampling%20in%20Audacity_files/badge_support.gif"></LI>
+  <LI class="postcount">Posts: 7376</LI>
+  <LI class="gender">Gender: <IMG class="gender" border="0" alt="Male" src="resampling%20in%20Audacity_files/Male.gif"></LI>
+  <LI class="blurb">Old enough to regret it, young enough to still try</LI>
+  <LI class="profile">
+  <UL></UL></LI></UL></DIV>
+<DIV class="postarea">
+<DIV class="flow_hidden">
+<DIV class="keyinfo">
+<DIV class="messageicon"><IMG border="0" alt="" src="resampling%20in%20Audacity_files/xx.gif"></DIV>
+<H5 id="subject_1867636"><A href="http://taperssection.com/index.php?topic=145084.msg1867636#msg1867636" 
+rel="nofollow">Re: resampling in Audacity?</A></H5>
+<DIV class="smalltext">« <STRONG>Reply #3 on:</STRONG> May 03, 2011, 10:01:29 PM 
+»</DIV>
+<DIV id="msg_1867636_quick_mod"></DIV></DIV></DIV>
+<DIV class="post">
+<DIV id="msg_1867636" class="inner">audacity has a bug when you resample 
+<EM>during export</EM>.<BR><BR>To avoid it, resample the entire show as a single 
+track, then chop it up during export (via labels, or however you prefer, I 
+recommend using labels for ease though). The option is under the Tracks 
+pulldown, around the 4th option.<BR><BR>Last, upgrade to 1.3.x, yes it's in 
+"beta" but it whips the pants off of 1.2.6 and ever since about 1.3.6 I've found 
+it more stable.<BR><BR>edit: also, dont forget to change your project sample 
+rate, bottom left corner. This should match what you want the final rate to be 
+even though you are resampling it via the menu noted above.</DIV></DIV></DIV>
+<DIV class="moderatorbar">
+<DIV id="modified_1867636" class="smalltext modified"></DIV>
+<DIV class="smalltext reportlinks"><IMG border="0" alt="" src="resampling%20in%20Audacity_files/ip.gif">
+								Logged							</DIV>
+<DIV id="msg_1867636_signature" class="signature">"This is a common practice we 
+have on the bus; debating facts that we could easily find through printed 
+material. It's like, how far is it today? I think it's four hours, and someone 
+else comes in at 11 hours, and well, then we'll... just... talk about it..." - 
+Jeb Puryear<BR><BR>"Nostalgia ain't what it used to be." - Jim 
+Williams<BR><BR>“If a thing like this is worth doing at all, it’s worth doing 
+right. We’ll need some decent equipment and plenty of cash on the line—if only 
+for drugs and a super-sensitive tape recorder, for the sake of a permanent 
+record.” - Raoul Duke</DIV></DIV></DIV><SPAN 
+class="botslice"><SPAN></SPAN></SPAN></DIV>
+<HR class="post_separator">
+<A id="msg1867651"></A>
+<DIV class="windowbg"><SPAN class="topslice"><SPAN></SPAN></SPAN>
+<DIV class="post_wrapper">
+<DIV class="poster">
+<H4><IMG alt="Offline" src="resampling%20in%20Audacity_files/useroff.gif"><A 
+title="View the profile of doodee" href="http://taperssection.com/index.php?action=profile;u=20655">doodee</A></H4>
+<UL id="msg_1867651_extra_info" class="reset smalltext">
+  <LI><B>Trade Count:  </B>					(<A href="http://taperssection.com/index.php?action=trader&amp;id=20655">9</A>)</LI>
+  <LI class="postgroup">Taperssection Member</LI>
+  <LI class="stars"><IMG border="0" alt="*" src="resampling%20in%20Audacity_files/star.gif"><IMG 
+  border="0" alt="*" src="resampling%20in%20Audacity_files/star.gif"><IMG 
+  border="0" alt="*" src="resampling%20in%20Audacity_files/star.gif"></LI>
+  <LI style="overflow: auto;" class="avatar"><A href="http://taperssection.com/index.php?action=profile;u=20655"><IMG 
+  class="avatar" border="0" alt="" src="resampling%20in%20Audacity_files/JAMC_Some_Candy_Talking_12Inch.jpg"></A></LI>
+  <LI class="postcount">Posts: 341</LI>
+  <LI class="profile">
+  <UL></UL></LI></UL></DIV>
+<DIV class="postarea">
+<DIV class="flow_hidden">
+<DIV class="keyinfo">
+<DIV class="messageicon"><IMG border="0" alt="" src="resampling%20in%20Audacity_files/xx.gif"></DIV>
+<H5 id="subject_1867651"><A href="http://taperssection.com/index.php?topic=145084.msg1867651#msg1867651" 
+rel="nofollow">Re: resampling in Audacity?</A></H5>
+<DIV class="smalltext">« <STRONG>Reply #4 on:</STRONG> May 03, 2011, 10:48:15 PM 
+»</DIV>
+<DIV id="msg_1867651_quick_mod"></DIV></DIV></DIV>
+<DIV class="post">
+<DIV id="msg_1867651" class="inner">That's the answer. I was having an issue 
+where a few seconds at the beginning and end of each track would repeat when I 
+exported them. Finally figured out it only happened when I was downsampling and 
+splitting tracks at the same time.</DIV></DIV></DIV>
+<DIV class="moderatorbar">
+<DIV id="modified_1867651" class="smalltext modified"></DIV>
+<DIV class="smalltext reportlinks"><IMG border="0" alt="" src="resampling%20in%20Audacity_files/ip.gif">
+								Logged							</DIV>
+<DIV id="msg_1867651_signature" class="signature">An instrument that converts 
+sound waves into an electric current &gt;<BR>an electronic amplifier which 
+precedes another amplifier to prepare an electronic signal for further 
+amplification or processing &gt;<BR>a device to capture an analog or digital 
+source and store the encoded data in a digital format.</DIV></DIV></DIV><SPAN 
+class="botslice"><SPAN></SPAN></SPAN></DIV>
+<HR class="post_separator">
+<A id="msg1867653"></A>
+<DIV class="windowbg2"><SPAN class="topslice"><SPAN></SPAN></SPAN>
+<DIV class="post_wrapper">
+<DIV class="poster">
+<H4><IMG alt="Offline" src="resampling%20in%20Audacity_files/useroff.gif"><A 
+title="View the profile of brad.bartels" href="http://taperssection.com/index.php?action=profile;u=8593">brad.bartels</A></H4>
+<UL id="msg_1867653_extra_info" class="reset smalltext">
+  <LI><B>Trade Count:  </B>					(<A href="http://taperssection.com/index.php?action=trader&amp;id=8593">2</A>)</LI>
+  <LI class="postgroup">Taperssection Regular</LI>
+  <LI class="stars"><IMG border="0" alt="*" src="resampling%20in%20Audacity_files/star.gif"><IMG 
+  border="0" alt="*" src="resampling%20in%20Audacity_files/star.gif"></LI>
+  <LI style="overflow: auto;" class="avatar"><A href="http://taperssection.com/index.php?action=profile;u=8593"><IMG 
+  class="avatar" border="0" alt="" src="resampling%20in%20Audacity_files/mediafire_com.htm"></A></LI>
+  <LI class="postcount">Posts: 101</LI>
+  <LI class="profile">
+  <UL></UL></LI></UL></DIV>
+<DIV class="postarea">
+<DIV class="flow_hidden">
+<DIV class="keyinfo">
+<DIV class="messageicon"><IMG border="0" alt="" src="resampling%20in%20Audacity_files/xx.gif"></DIV>
+<H5 id="subject_1867653"><A href="http://taperssection.com/index.php?topic=145084.msg1867653#msg1867653" 
+rel="nofollow">Re: resampling in Audacity?</A></H5>
+<DIV class="smalltext">« <STRONG>Reply #5 on:</STRONG> May 03, 2011, 10:55:28 PM 
+»</DIV>
+<DIV id="msg_1867653_quick_mod"></DIV></DIV></DIV>
+<DIV class="post">
+<DIV id="msg_1867653" class="inner">Thanks doodee and page. Sounds like that is 
+the problem, I'll give your solution a try - tomorrow, it's past my bedtime:). 
+Much appreciate the help on this.</DIV></DIV></DIV>
+<DIV class="moderatorbar">
+<DIV id="modified_1867653" class="smalltext modified"></DIV>
+<DIV class="smalltext reportlinks"><IMG border="0" alt="" src="resampling%20in%20Audacity_files/ip.gif">
+								Logged							</DIV></DIV></DIV><SPAN 
+class="botslice"><SPAN></SPAN></SPAN></DIV>
+<HR class="post_separator">
+<A id="msg1867862"></A>
+<DIV class="windowbg"><SPAN class="topslice"><SPAN></SPAN></SPAN>
+<DIV class="post_wrapper">
+<DIV class="poster">
+<H4><IMG alt="Offline" src="resampling%20in%20Audacity_files/useroff.gif"><A 
+title="View the profile of willndmb" href="http://taperssection.com/index.php?action=profile;u=2412">willndmb</A></H4>
+<UL id="msg_1867862_extra_info" class="reset smalltext">
+  <LI><B>Trade Count:  </B>					(<A href="http://taperssection.com/index.php?action=trader&amp;id=2412">12</A>)</LI>
+  <LI class="postgroup">Needs to get out more...</LI>
+  <LI class="stars"><IMG border="0" alt="*" src="resampling%20in%20Audacity_files/star.gif"><IMG 
+  border="0" alt="*" src="resampling%20in%20Audacity_files/star.gif"><IMG 
+  border="0" alt="*" src="resampling%20in%20Audacity_files/star.gif"><IMG 
+  border="0" alt="*" src="resampling%20in%20Audacity_files/star.gif"><IMG 
+  border="0" alt="*" src="resampling%20in%20Audacity_files/star.gif"></LI>
+  <LI style="overflow: auto;" class="avatar"><A href="http://taperssection.com/index.php?action=profile;u=2412"><IMG 
+  class="avatar" border="0" alt="" src="resampling%20in%20Audacity_files/p60.gif"></A></LI>
+  <LI class="postcount">Posts: 5197</LI>
+  <LI class="gender">Gender: <IMG class="gender" border="0" alt="Male" src="resampling%20in%20Audacity_files/Male.gif"></LI>
+  <LI class="profile">
+  <UL></UL></LI></UL></DIV>
+<DIV class="postarea">
+<DIV class="flow_hidden">
+<DIV class="keyinfo">
+<DIV class="messageicon"><IMG border="0" alt="" src="resampling%20in%20Audacity_files/xx.gif"></DIV>
+<H5 id="subject_1867862"><A href="http://taperssection.com/index.php?topic=145084.msg1867862#msg1867862" 
+rel="nofollow">Re: resampling in Audacity?</A></H5>
+<DIV class="smalltext">« <STRONG>Reply #6 on:</STRONG> May 04, 2011, 02:12:40 PM 
+»</DIV>
+<DIV id="msg_1867862_quick_mod"></DIV></DIV></DIV>
+<DIV class="post">
+<DIV id="msg_1867862" class="inner">the safest way i found is to do any edits 
+like amplify in the original file<BR>change the sample/bit 
+rates<BR>export<BR>open the new file<BR>track it out <BR>export 
+multi</DIV></DIV></DIV>
+<DIV class="moderatorbar">
+<DIV id="modified_1867862" class="smalltext modified"></DIV>
+<DIV class="smalltext reportlinks"><IMG border="0" alt="" src="resampling%20in%20Audacity_files/ip.gif">
+								Logged							</DIV>
+<DIV id="msg_1867862_signature" class="signature">Mics - AKG 483, AKG ck61 
+(Naiant actives), SP-BMC-2<BR>XLR Cables - Silver Path w/Darktrain 
+stubbies<BR>Interconnect Cables - Dogstar (XLR), Darktrain (RCA &gt; 1/8) (1/8 
+&gt; 1/8), and Kind Kables (1/8f &gt; 1/4)<BR>Preamps - Naiant Littlebox &amp; 
+Tinybox<BR>Recorders - PCM-M10</DIV></DIV></DIV><SPAN 
+class="botslice"><SPAN></SPAN></SPAN></DIV>
+<HR class="post_separator">
+<A id="msg1867871"></A>
+<DIV class="windowbg2"><SPAN class="topslice"><SPAN></SPAN></SPAN>
+<DIV class="post_wrapper">
+<DIV class="poster">
+<H4><IMG alt="Offline" src="resampling%20in%20Audacity_files/useroff.gif"><A 
+title="View the profile of page" href="http://taperssection.com/index.php?action=profile;u=1482">page</A></H4>
+<UL id="msg_1867871_extra_info" class="reset smalltext">
+  <LI class="membergroup">Site Supporter</LI>
+  <LI><B>Trade Count:  </B>					(<A href="http://taperssection.com/index.php?action=trader&amp;id=1482">20</A>)</LI>
+  <LI class="postgroup">Needs to get out more...</LI>
+  <LI class="stars"><IMG border="0" alt="*" src="resampling%20in%20Audacity_files/badge_support.gif"></LI>
+  <LI class="postcount">Posts: 7376</LI>
+  <LI class="gender">Gender: <IMG class="gender" border="0" alt="Male" src="resampling%20in%20Audacity_files/Male.gif"></LI>
+  <LI class="blurb">Old enough to regret it, young enough to still try</LI>
+  <LI class="profile">
+  <UL></UL></LI></UL></DIV>
+<DIV class="postarea">
+<DIV class="flow_hidden">
+<DIV class="keyinfo">
+<DIV class="messageicon"><IMG border="0" alt="" src="resampling%20in%20Audacity_files/xx.gif"></DIV>
+<H5 id="subject_1867871"><A href="http://taperssection.com/index.php?topic=145084.msg1867871#msg1867871" 
+rel="nofollow">Re: resampling in Audacity?</A></H5>
+<DIV class="smalltext">« <STRONG>Reply #7 on:</STRONG> May 04, 2011, 02:27:48 PM 
+»</DIV>
+<DIV id="msg_1867871_quick_mod"></DIV></DIV></DIV>
+<DIV class="post">
+<DIV id="msg_1867871" class="inner">
+<DIV class="quoteheader">
+<DIV class="topslice_quote"><A href="http://taperssection.com/index.php?topic=145084.msg1867862#msg1867862">Quote 
+from: willndmb on May 04, 2011, 02:12:40 PM</A></DIV></DIV>
+<BLOCKQUOTE class="bbc_standard_quote">the safest way i found is to do any 
+  edits like amplify in the original file<BR>change the sample/bit 
+  rates<BR>export<BR>open the new file<BR>track it out <BR>export 
+multi<BR></BLOCKQUOTE>
+<DIV class="quotefooter">
+<DIV class="botslice_quote"></DIV></DIV><BR>Be careful about dither. Audacity 
+dithers <EM>regardless</EM> of change in bitdepth (or <EM>direction</EM> of 
+bitdepth) if you've set it to dither on export. So unless you're flipping that 
+setting deep in the preferences menu each time, you're dithering twice at 
+16bit.<BR><BR>It's a handy program, and I can't find anything better at it's 
+price point, but it has a ton of quirks like that.</DIV></DIV></DIV>
+<DIV class="moderatorbar">
+<DIV id="modified_1867871" class="smalltext modified"></DIV>
+<DIV class="smalltext reportlinks"><IMG border="0" alt="" src="resampling%20in%20Audacity_files/ip.gif">
+								Logged							</DIV>
+<DIV id="msg_1867871_signature" class="signature">"This is a common practice we 
+have on the bus; debating facts that we could easily find through printed 
+material. It's like, how far is it today? I think it's four hours, and someone 
+else comes in at 11 hours, and well, then we'll... just... talk about it..." - 
+Jeb Puryear<BR><BR>"Nostalgia ain't what it used to be." - Jim 
+Williams<BR><BR>“If a thing like this is worth doing at all, it’s worth doing 
+right. We’ll need some decent equipment and plenty of cash on the line—if only 
+for drugs and a super-sensitive tape recorder, for the sake of a permanent 
+record.” - Raoul Duke</DIV></DIV></DIV><SPAN 
+class="botslice"><SPAN></SPAN></SPAN></DIV>
+<HR class="post_separator">
+<A id="msg1867927"></A>
+<DIV class="windowbg"><SPAN class="topslice"><SPAN></SPAN></SPAN>
+<DIV class="post_wrapper">
+<DIV class="poster">
+<H4><IMG alt="Offline" src="resampling%20in%20Audacity_files/useroff.gif"><A 
+title="View the profile of brad.bartels" href="http://taperssection.com/index.php?action=profile;u=8593">brad.bartels</A></H4>
+<UL id="msg_1867927_extra_info" class="reset smalltext">
+  <LI><B>Trade Count:  </B>					(<A href="http://taperssection.com/index.php?action=trader&amp;id=8593">2</A>)</LI>
+  <LI class="postgroup">Taperssection Regular</LI>
+  <LI class="stars"><IMG border="0" alt="*" src="resampling%20in%20Audacity_files/star.gif"><IMG 
+  border="0" alt="*" src="resampling%20in%20Audacity_files/star.gif"></LI>
+  <LI style="overflow: auto;" class="avatar"><A href="http://taperssection.com/index.php?action=profile;u=8593"><IMG 
+  class="avatar" border="0" alt="" src="resampling%20in%20Audacity_files/mediafire_com.htm"></A></LI>
+  <LI class="postcount">Posts: 101</LI>
+  <LI class="profile">
+  <UL></UL></LI></UL></DIV>
+<DIV class="postarea">
+<DIV class="flow_hidden">
+<DIV class="keyinfo">
+<DIV class="messageicon"><IMG border="0" alt="" src="resampling%20in%20Audacity_files/xx.gif"></DIV>
+<H5 id="subject_1867927"><A href="http://taperssection.com/index.php?topic=145084.msg1867927#msg1867927" 
+rel="nofollow">Re: resampling in Audacity?</A></H5>
+<DIV class="smalltext">« <STRONG>Reply #8 on:</STRONG> May 04, 2011, 04:14:59 PM 
+»</DIV>
+<DIV id="msg_1867927_quick_mod"></DIV></DIV></DIV>
+<DIV class="post">
+<DIV id="msg_1867927" class="inner">
+<DIV class="quoteheader">
+<DIV class="topslice_quote"><A href="http://taperssection.com/index.php?topic=145084.msg1867871#msg1867871">Quote 
+from: page on May 04, 2011, 02:27:48 PM</A></DIV></DIV>
+<BLOCKQUOTE class="bbc_standard_quote">
+  <DIV class="quoteheader">
+  <DIV class="topslice_quote"><A href="http://taperssection.com/index.php?topic=145084.msg1867862#msg1867862">Quote 
+  from: willndmb on May 04, 2011, 02:12:40 PM</A></DIV></DIV>
+  <BLOCKQUOTE class="bbc_alternate_quote">the safest way i found is to do any 
+    edits like amplify in the original file<BR>change the sample/bit 
+    rates<BR>export<BR>open the new file<BR>track it out <BR>export 
+  multi<BR></BLOCKQUOTE>
+  <DIV class="quotefooter">
+  <DIV class="botslice_quote"></DIV></DIV><BR>Be careful about dither. Audacity 
+  dithers <EM>regardless</EM> of change in bitdepth (or <EM>direction</EM> of 
+  bitdepth) if you've set it to dither on export. So unless you're flipping that 
+  setting deep in the preferences menu each time, you're dithering twice at 
+  16bit.<BR><BR>It's a handy program, and I can't find anything better at it's 
+  price point, but it has a ton of quirks like that.<BR></BLOCKQUOTE>
+<DIV class="quotefooter">
+<DIV class="botslice_quote"></DIV></DIV><BR><BR>I had downloaded the Voxengo 
+r8brain that flipp referenced at the beginning. When I processed it the first 
+time in Audacity, I needed to boost one of the channels a little bit to even 
+them out and then normalize / amplify it by like 4 or 5 dB if I remember right. 
+I'm thinking the best approach would be to run my raw files (it was more than 2 
+Gb worth, so the recorder of course broke it into 2 files) through the r8brain 
+software to resample it to 44.1 KHz but leave it 24-bit, then import that into 
+Audacity and do my normalization / amplification and split tracks and then 
+export as 16-bit .wav's. Does that sound like a reasonable approach? I was 
+hoping to not have to retrack it, but it looks like I'm going to have to do that 
+anyway, so it seems like it might be best to resample to 44.1 kHz before even 
+importing into Audacity and then do all the editing in Audacity while it's still 
+in 24-bit format? Really appreciate the help on this.</DIV></DIV></DIV>
+<DIV class="moderatorbar">
+<DIV id="modified_1867927" class="smalltext modified"></DIV>
+<DIV class="smalltext reportlinks"><IMG border="0" alt="" src="resampling%20in%20Audacity_files/ip.gif">
+								Logged							</DIV></DIV></DIV><SPAN 
+class="botslice"><SPAN></SPAN></SPAN></DIV>
+<HR class="post_separator">
+<A id="msg1867954"></A>
+<DIV class="windowbg2"><SPAN class="topslice"><SPAN></SPAN></SPAN>
+<DIV class="post_wrapper">
+<DIV class="poster">
+<H4><IMG alt="Offline" src="resampling%20in%20Audacity_files/useroff.gif"><A 
+title="View the profile of page" href="http://taperssection.com/index.php?action=profile;u=1482">page</A></H4>
+<UL id="msg_1867954_extra_info" class="reset smalltext">
+  <LI class="membergroup">Site Supporter</LI>
+  <LI><B>Trade Count:  </B>					(<A href="http://taperssection.com/index.php?action=trader&amp;id=1482">20</A>)</LI>
+  <LI class="postgroup">Needs to get out more...</LI>
+  <LI class="stars"><IMG border="0" alt="*" src="resampling%20in%20Audacity_files/badge_support.gif"></LI>
+  <LI class="postcount">Posts: 7376</LI>
+  <LI class="gender">Gender: <IMG class="gender" border="0" alt="Male" src="resampling%20in%20Audacity_files/Male.gif"></LI>
+  <LI class="blurb">Old enough to regret it, young enough to still try</LI>
+  <LI class="profile">
+  <UL></UL></LI></UL></DIV>
+<DIV class="postarea">
+<DIV class="flow_hidden">
+<DIV class="keyinfo">
+<DIV class="messageicon"><IMG border="0" alt="" src="resampling%20in%20Audacity_files/xx.gif"></DIV>
+<H5 id="subject_1867954"><A href="http://taperssection.com/index.php?topic=145084.msg1867954#msg1867954" 
+rel="nofollow">Re: resampling in Audacity?</A></H5>
+<DIV class="smalltext">« <STRONG>Reply #9 on:</STRONG> May 04, 2011, 04:54:31 PM 
+»</DIV>
+<DIV id="msg_1867954_quick_mod"></DIV></DIV></DIV>
+<DIV class="post">
+<DIV id="msg_1867954" class="inner">
+<DIV class="quoteheader">
+<DIV class="topslice_quote"><A href="http://taperssection.com/index.php?topic=145084.msg1867927#msg1867927">Quote 
+from: brad.bartels on May 04, 2011, 04:14:59 PM</A></DIV></DIV>
+<BLOCKQUOTE class="bbc_standard_quote">
+  <DIV class="quoteheader">
+  <DIV class="topslice_quote"><A href="http://taperssection.com/index.php?topic=145084.msg1867871#msg1867871">Quote 
+  from: page on May 04, 2011, 02:27:48 PM</A></DIV></DIV>
+  <BLOCKQUOTE class="bbc_alternate_quote">
+    <DIV class="quoteheader">
+    <DIV class="topslice_quote"><A href="http://taperssection.com/index.php?topic=145084.msg1867862#msg1867862">Quote 
+    from: willndmb on May 04, 2011, 02:12:40 PM</A></DIV></DIV>
+    <BLOCKQUOTE class="bbc_standard_quote">the safest way i found is to do any 
+      edits like amplify in the original file<BR>change the sample/bit 
+      rates<BR>export<BR>open the new file<BR>track it out <BR>export 
+    multi<BR></BLOCKQUOTE>
+    <DIV class="quotefooter">
+    <DIV class="botslice_quote"></DIV></DIV><BR>Be careful about dither. 
+    Audacity dithers <EM>regardless</EM> of change in bitdepth (or 
+    <EM>direction</EM> of bitdepth) if you've set it to dither on export. So 
+    unless you're flipping that setting deep in the preferences menu each time, 
+    you're dithering twice at 16bit.<BR><BR>It's a handy program, and I can't 
+    find anything better at it's price point, but it has a ton of quirks like 
+    that.<BR></BLOCKQUOTE>
+  <DIV class="quotefooter">
+  <DIV class="botslice_quote"></DIV></DIV><BR><BR>I had downloaded the Voxengo 
+  r8brain that flipp referenced at the beginning. When I processed it the first 
+  time in Audacity, I needed to boost one of the channels a little bit to even 
+  them out and then normalize / amplify it by like 4 or 5 dB if I remember 
+  right. I'm thinking the best approach would be to run my raw files (it was 
+  more than 2 Gb worth, so the recorder of course broke it into 2 files) through 
+  the r8brain software to resample it to 44.1 KHz but leave it 24-bit, then 
+  import that into Audacity and do my normalization / amplification and split 
+  tracks and then export as 16-bit .wav's. Does that sound like a reasonable 
+  approach? I was hoping to not have to retrack it, but it looks like I'm going 
+  to have to do that anyway, so it seems like it might be best to resample to 
+  44.1 kHz before even importing into Audacity and then do all the editing in 
+  Audacity while it's still in 24-bit format? Really appreciate the help on 
+  this.<BR></BLOCKQUOTE>
+<DIV class="quotefooter">
+<DIV class="botslice_quote"></DIV></DIV><BR>If you did the tracking via labels, 
+you can export the labels as a text file and re-import them later if you decide 
+to make changes.<BR><BR>Without doing Audacity (combine, edits, export as 32bit 
+<EM>due to edits &amp; other processing</EM>) &gt; r8brain (resample, dither to 
+16bit) &gt; Audacity (track) then what you're suggesting makes the most sense. 
+I've heard it's best practice to do edits in the largest domain possible 
+(whatever your raw file comes in as, in this case 24/48), and resample, then 
+dither at the end (in that order), but I'm not sure how much it really matters 
+in the grand scheme of things versus resampling first.<BR><BR>If you can run 
+r8brain as a plugin in Audacity (like as a VST or AU plugin), then you could do 
+the resample/dither last, set your project workflow in the bottom left corner as 
+what you set it to in r8brain, and (if r8brain will do it as a plugin) turn 
+dither off. I've used Ozone from Izotope that way in conjunction with 
+Audacity.<BR><BR>The bummer about all of this is it's a bell curve. When it's 
+done perfectly, it's great (you don't notice any problems). When it's done sort 
+of haphazardly, you probably won't notice any problems, or at least probably 
+won't attribute them to resampling/dithering (because it's under the noise 
+floor), but when you do it poorly, its sort of noticable during critical 
+listening.</DIV></DIV></DIV>
+<DIV class="moderatorbar">
+<DIV id="modified_1867954" class="smalltext modified"></DIV>
+<DIV class="smalltext reportlinks"><IMG border="0" alt="" src="resampling%20in%20Audacity_files/ip.gif">
+								Logged							</DIV>
+<DIV id="msg_1867954_signature" class="signature">"This is a common practice we 
+have on the bus; debating facts that we could easily find through printed 
+material. It's like, how far is it today? I think it's four hours, and someone 
+else comes in at 11 hours, and well, then we'll... just... talk about it..." - 
+Jeb Puryear<BR><BR>"Nostalgia ain't what it used to be." - Jim 
+Williams<BR><BR>“If a thing like this is worth doing at all, it’s worth doing 
+right. We’ll need some decent equipment and plenty of cash on the line—if only 
+for drugs and a super-sensitive tape recorder, for the sake of a permanent 
+record.” - Raoul Duke</DIV></DIV></DIV><SPAN 
+class="botslice"><SPAN></SPAN></SPAN></DIV>
+<HR class="post_separator">
+<A id="msg1867988"></A>
+<DIV class="windowbg"><SPAN class="topslice"><SPAN></SPAN></SPAN>
+<DIV class="post_wrapper">
+<DIV class="poster">
+<H4><IMG alt="Offline" src="resampling%20in%20Audacity_files/useroff.gif"><A 
+title="View the profile of brad.bartels" href="http://taperssection.com/index.php?action=profile;u=8593">brad.bartels</A></H4>
+<UL id="msg_1867988_extra_info" class="reset smalltext">
+  <LI><B>Trade Count:  </B>					(<A href="http://taperssection.com/index.php?action=trader&amp;id=8593">2</A>)</LI>
+  <LI class="postgroup">Taperssection Regular</LI>
+  <LI class="stars"><IMG border="0" alt="*" src="resampling%20in%20Audacity_files/star.gif"><IMG 
+  border="0" alt="*" src="resampling%20in%20Audacity_files/star.gif"></LI>
+  <LI style="overflow: auto;" class="avatar"><A href="http://taperssection.com/index.php?action=profile;u=8593"><IMG 
+  class="avatar" border="0" alt="" src="resampling%20in%20Audacity_files/mediafire_com.htm"></A></LI>
+  <LI class="postcount">Posts: 101</LI>
+  <LI class="profile">
+  <UL></UL></LI></UL></DIV>
+<DIV class="postarea">
+<DIV class="flow_hidden">
+<DIV class="keyinfo">
+<DIV class="messageicon"><IMG border="0" alt="" src="resampling%20in%20Audacity_files/xx.gif"></DIV>
+<H5 id="subject_1867988"><A href="http://taperssection.com/index.php?topic=145084.msg1867988#msg1867988" 
+rel="nofollow">Re: resampling in Audacity?</A></H5>
+<DIV class="smalltext">« <STRONG>Reply #10 on:</STRONG> May 04, 2011, 07:50:58 
+PM »</DIV>
+<DIV id="msg_1867988_quick_mod"></DIV></DIV></DIV>
+<DIV class="post">
+<DIV id="msg_1867988" class="inner">
+<DIV class="quoteheader">
+<DIV class="topslice_quote"><A href="http://taperssection.com/index.php?topic=145084.msg1867954#msg1867954">Quote 
+from: page on May 04, 2011, 04:54:31 PM</A></DIV></DIV>
+<BLOCKQUOTE class="bbc_standard_quote">
+  <DIV class="quoteheader">
+  <DIV class="topslice_quote"><A href="http://taperssection.com/index.php?topic=145084.msg1867927#msg1867927">Quote 
+  from: brad.bartels on May 04, 2011, 04:14:59 PM</A></DIV></DIV>
+  <BLOCKQUOTE class="bbc_alternate_quote">
+    <DIV class="quoteheader">
+    <DIV class="topslice_quote"><A href="http://taperssection.com/index.php?topic=145084.msg1867871#msg1867871">Quote 
+    from: page on May 04, 2011, 02:27:48 PM</A></DIV></DIV>
+    <BLOCKQUOTE class="bbc_standard_quote">
+      <DIV class="quoteheader">
+      <DIV class="topslice_quote"><A href="http://taperssection.com/index.php?topic=145084.msg1867862#msg1867862">Quote 
+      from: willndmb on May 04, 2011, 02:12:40 PM</A></DIV></DIV>
+      <BLOCKQUOTE class="bbc_alternate_quote">the safest way i found is to do 
+        any edits like amplify in the original file<BR>change the sample/bit 
+        rates<BR>export<BR>open the new file<BR>track it out <BR>export 
+      multi<BR></BLOCKQUOTE>
+      <DIV class="quotefooter">
+      <DIV class="botslice_quote"></DIV></DIV><BR>Be careful about dither. 
+      Audacity dithers <EM>regardless</EM> of change in bitdepth (or 
+      <EM>direction</EM> of bitdepth) if you've set it to dither on export. So 
+      unless you're flipping that setting deep in the preferences menu each 
+      time, you're dithering twice at 16bit.<BR><BR>It's a handy program, and I 
+      can't find anything better at it's price point, but it has a ton of quirks 
+      like that.<BR></BLOCKQUOTE>
+    <DIV class="quotefooter">
+    <DIV class="botslice_quote"></DIV></DIV><BR><BR>I had downloaded the Voxengo 
+    r8brain that flipp referenced at the beginning. When I processed it the 
+    first time in Audacity, I needed to boost one of the channels a little bit 
+    to even them out and then normalize / amplify it by like 4 or 5 dB if I 
+    remember right. I'm thinking the best approach would be to run my raw files 
+    (it was more than 2 Gb worth, so the recorder of course broke it into 2 
+    files) through the r8brain software to resample it to 44.1 KHz but leave it 
+    24-bit, then import that into Audacity and do my normalization / 
+    amplification and split tracks and then export as 16-bit .wav's. Does that 
+    sound like a reasonable approach? I was hoping to not have to retrack it, 
+    but it looks like I'm going to have to do that anyway, so it seems like it 
+    might be best to resample to 44.1 kHz before even importing into Audacity 
+    and then do all the editing in Audacity while it's still in 24-bit format? 
+    Really appreciate the help on this.<BR></BLOCKQUOTE>
+  <DIV class="quotefooter">
+  <DIV class="botslice_quote"></DIV></DIV><BR>If you did the tracking via 
+  labels, you can export the labels as a text file and re-import them later if 
+  you decide to make changes.<BR><BR>Without doing Audacity (combine, edits, 
+  export as 32bit <EM>due to edits &amp; other processing</EM>) &gt; r8brain 
+  (resample, dither to 16bit) &gt; Audacity (track) then what you're suggesting 
+  makes the most sense. I've heard it's best practice to do edits in the largest 
+  domain possible (whatever your raw file comes in as, in this case 24/48), and 
+  resample, then dither at the end (in that order), but I'm not sure how much it 
+  really matters in the grand scheme of things versus resampling 
+  first.<BR><BR>If you can run r8brain as a plugin in Audacity (like as a VST or 
+  AU plugin), then you could do the resample/dither last, set your project 
+  workflow in the bottom left corner as what you set it to in r8brain, and (if 
+  r8brain will do it as a plugin) turn dither off. I've used Ozone from Izotope 
+  that way in conjunction with Audacity.<BR><BR>The bummer about all of this is 
+  it's a bell curve. When it's done perfectly, it's great (you don't notice any 
+  problems). When it's done sort of haphazardly, you probably won't notice any 
+  problems, or at least probably won't attribute them to resampling/dithering 
+  (because it's under the noise floor), but when you do it poorly, its sort of 
+  noticable during critical listening.<BR></BLOCKQUOTE>
+<DIV class="quotefooter">
+<DIV class="botslice_quote"></DIV></DIV><BR><BR>Yeah, it seems like you would 
+lose anything you gained by resampling first if you resampled before any 
+normalizing, etc. But I can't imagine there is that much different between 48 
+kHz and 44.1 kHz. I suppose if I had used 96 kHz. I think keeping it 24-bit 
+though until the final export will retain most of the advantage? Sounds like 
+optimally what you would want to do (especially with a 24-bit / 96 kHz 
+recording) would be to pull it into Audacity and do all of your normalizing, 
+compression (if you use that), etc. and then export it as 16/44.1 before 
+splitting it into tracks? Then pull that back into Audacity and split / 
+re-export with no dithering (if you can really turn it off)?<BR><BR>For this 
+one, I'm resampling from 48 kHz to 44.1 kHz with r8brain first but leaving it 
+24-bit. Then I will do everything I normally do in Audacity (normalize, try 
+toremove any offending noises, split tracks, etc.) and then export like I 
+normally do. That should work?<BR><BR>I haven't been using labels to split into 
+tracks (didn't actually realize you could). I normally put my cursor where I 
+want the track split and select everything between cursor and end and then 
+split. Sounds like labels may be easier. Appreciate all the help and feedback. 
+If it doesn't work, I'll probably be back;)</DIV></DIV></DIV>
+<DIV class="moderatorbar">
+<DIV id="modified_1867988" class="smalltext modified"></DIV>
+<DIV class="smalltext reportlinks"><IMG border="0" alt="" src="resampling%20in%20Audacity_files/ip.gif">
+								Logged							</DIV></DIV></DIV><SPAN 
+class="botslice"><SPAN></SPAN></SPAN></DIV>
+<HR class="post_separator">
+<A id="msg1867999"></A>
+<DIV class="windowbg2"><SPAN class="topslice"><SPAN></SPAN></SPAN>
+<DIV class="post_wrapper">
+<DIV class="poster">
+<H4><IMG alt="Offline" src="resampling%20in%20Audacity_files/useroff.gif"><A 
+title="View the profile of willndmb" href="http://taperssection.com/index.php?action=profile;u=2412">willndmb</A></H4>
+<UL id="msg_1867999_extra_info" class="reset smalltext">
+  <LI><B>Trade Count:  </B>					(<A href="http://taperssection.com/index.php?action=trader&amp;id=2412">12</A>)</LI>
+  <LI class="postgroup">Needs to get out more...</LI>
+  <LI class="stars"><IMG border="0" alt="*" src="resampling%20in%20Audacity_files/star.gif"><IMG 
+  border="0" alt="*" src="resampling%20in%20Audacity_files/star.gif"><IMG 
+  border="0" alt="*" src="resampling%20in%20Audacity_files/star.gif"><IMG 
+  border="0" alt="*" src="resampling%20in%20Audacity_files/star.gif"><IMG 
+  border="0" alt="*" src="resampling%20in%20Audacity_files/star.gif"></LI>
+  <LI style="overflow: auto;" class="avatar"><A href="http://taperssection.com/index.php?action=profile;u=2412"><IMG 
+  class="avatar" border="0" alt="" src="resampling%20in%20Audacity_files/p60.gif"></A></LI>
+  <LI class="postcount">Posts: 5197</LI>
+  <LI class="gender">Gender: <IMG class="gender" border="0" alt="Male" src="resampling%20in%20Audacity_files/Male.gif"></LI>
+  <LI class="profile">
+  <UL></UL></LI></UL></DIV>
+<DIV class="postarea">
+<DIV class="flow_hidden">
+<DIV class="keyinfo">
+<DIV class="messageicon"><IMG border="0" alt="" src="resampling%20in%20Audacity_files/xx.gif"></DIV>
+<H5 id="subject_1867999"><A href="http://taperssection.com/index.php?topic=145084.msg1867999#msg1867999" 
+rel="nofollow">Re: resampling in Audacity?</A></H5>
+<DIV class="smalltext">« <STRONG>Reply #11 on:</STRONG> May 04, 2011, 09:12:14 
+PM »</DIV>
+<DIV id="msg_1867999_quick_mod"></DIV></DIV></DIV>
+<DIV class="post">
+<DIV id="msg_1867999" class="inner">
+<DIV class="quoteheader">
+<DIV class="topslice_quote"><A href="http://taperssection.com/index.php?topic=145084.msg1867871#msg1867871">Quote 
+from: page on May 04, 2011, 02:27:48 PM</A></DIV></DIV>
+<BLOCKQUOTE class="bbc_standard_quote">
+  <DIV class="quoteheader">
+  <DIV class="topslice_quote"><A href="http://taperssection.com/index.php?topic=145084.msg1867862#msg1867862">Quote 
+  from: willndmb on May 04, 2011, 02:12:40 PM</A></DIV></DIV>
+  <BLOCKQUOTE class="bbc_alternate_quote">the safest way i found is to do any 
+    edits like amplify in the original file<BR>change the sample/bit 
+    rates<BR>export<BR>open the new file<BR>track it out <BR>export 
+  multi<BR></BLOCKQUOTE>
+  <DIV class="quotefooter">
+  <DIV class="botslice_quote"></DIV></DIV><BR>Be careful about dither. Audacity 
+  dithers <EM>regardless</EM> of change in bitdepth (or <EM>direction</EM> of 
+  bitdepth) if you've set it to dither on export. So unless you're flipping that 
+  setting deep in the preferences menu each time, you're dithering twice at 
+  16bit.<BR><BR>It's a handy program, and I can't find anything better at it's 
+  price point, but it has a ton of quirks like that.<BR></BLOCKQUOTE>
+<DIV class="quotefooter">
+<DIV class="botslice_quote"></DIV></DIV>hmmm<BR>i most likey am doing it twice 
+then<BR>not sure what kind of effect it would have doing it twice, but it sounds 
+ok on playback<BR>guess i will get in the habit of checking that out 
+too</DIV></DIV></DIV>
+<DIV class="moderatorbar">
+<DIV id="modified_1867999" class="smalltext modified"></DIV>
+<DIV class="smalltext reportlinks"><IMG border="0" alt="" src="resampling%20in%20Audacity_files/ip.gif">
+								Logged							</DIV>
+<DIV id="msg_1867999_signature" class="signature">Mics - AKG 483, AKG ck61 
+(Naiant actives), SP-BMC-2<BR>XLR Cables - Silver Path w/Darktrain 
+stubbies<BR>Interconnect Cables - Dogstar (XLR), Darktrain (RCA &gt; 1/8) (1/8 
+&gt; 1/8), and Kind Kables (1/8f &gt; 1/4)<BR>Preamps - Naiant Littlebox &amp; 
+Tinybox<BR>Recorders - PCM-M10</DIV></DIV></DIV><SPAN 
+class="botslice"><SPAN></SPAN></SPAN></DIV>
+<HR class="post_separator">
+<A id="msg1868047"></A>
+<DIV class="windowbg"><SPAN class="topslice"><SPAN></SPAN></SPAN>
+<DIV class="post_wrapper">
+<DIV class="poster">
+<H4><IMG alt="Offline" src="resampling%20in%20Audacity_files/useroff.gif"><A 
+title="View the profile of page" href="http://taperssection.com/index.php?action=profile;u=1482">page</A></H4>
+<UL id="msg_1868047_extra_info" class="reset smalltext">
+  <LI class="membergroup">Site Supporter</LI>
+  <LI><B>Trade Count:  </B>					(<A href="http://taperssection.com/index.php?action=trader&amp;id=1482">20</A>)</LI>
+  <LI class="postgroup">Needs to get out more...</LI>
+  <LI class="stars"><IMG border="0" alt="*" src="resampling%20in%20Audacity_files/badge_support.gif"></LI>
+  <LI class="postcount">Posts: 7376</LI>
+  <LI class="gender">Gender: <IMG class="gender" border="0" alt="Male" src="resampling%20in%20Audacity_files/Male.gif"></LI>
+  <LI class="blurb">Old enough to regret it, young enough to still try</LI>
+  <LI class="profile">
+  <UL></UL></LI></UL></DIV>
+<DIV class="postarea">
+<DIV class="flow_hidden">
+<DIV class="keyinfo">
+<DIV class="messageicon"><IMG border="0" alt="" src="resampling%20in%20Audacity_files/xx.gif"></DIV>
+<H5 id="subject_1868047"><A href="http://taperssection.com/index.php?topic=145084.msg1868047#msg1868047" 
+rel="nofollow">Re: resampling in Audacity?</A></H5>
+<DIV class="smalltext">« <STRONG>Reply #12 on:</STRONG> May 05, 2011, 01:41:44 
+AM »</DIV>
+<DIV id="msg_1868047_quick_mod"></DIV></DIV></DIV>
+<DIV class="post">
+<DIV id="msg_1868047" class="inner">
+<DIV class="quoteheader">
+<DIV class="topslice_quote"><A href="http://taperssection.com/index.php?topic=145084.msg1867988#msg1867988">Quote 
+from: brad.bartels on May 04, 2011, 07:50:58 PM</A></DIV></DIV>
+<BLOCKQUOTE class="bbc_standard_quote">Yeah, it seems like you would lose 
+  anything you gained by resampling first if you resampled before any 
+  normalizing, etc. But I can't imagine there is that much different between 48 
+  kHz and 44.1 kHz. I suppose if I had used 96 kHz. I think keeping it 24-bit 
+  though until the final export will retain most of the advantage? </BLOCKQUOTE>
+<DIV class="quotefooter">
+<DIV class="botslice_quote"></DIV></DIV><BR>Some argue that the difference 
+between 44.1 and 48 is worth more to music recorders than 48 to 96, but the 
+theory stands as to doing edits at the higher sample rate before resampling. 
+Like I said, in the grand scheme of things, I wouldn't worry about it.<BR><BR>As 
+for your bit depth, yes, you'll gain a lot from doing edits in higher bitrates 
+until the final export when you dither to 16.<BR><BR>
+<DIV class="quoteheader">
+<DIV class="topslice_quote"><A href="http://taperssection.com/index.php?topic=145084.msg1867988#msg1867988">Quote 
+from: brad.bartels on May 04, 2011, 07:50:58 PM</A></DIV></DIV>
+<BLOCKQUOTE class="bbc_standard_quote">Sounds like optimally what you would 
+  want to do (especially with a 24-bit / 96 kHz recording) would be to pull it 
+  into Audacity and do all of your normalizing, compression (if you use that), 
+  etc. and then export it as 16/44.1 before splitting it into tracks? Then pull 
+  that back into Audacity and split / re-export with no dithering (if you can 
+  really turn it off)?</BLOCKQUOTE>
+<DIV class="quotefooter">
+<DIV class="botslice_quote"></DIV></DIV><BR>Basically yes (and yes, you can turn 
+off dither, select "none" instead of a shaping or quality, but that applies 
+until you change it, not per workflow/file).<BR><BR>
+<DIV class="quoteheader">
+<DIV class="topslice_quote"><A href="http://taperssection.com/index.php?topic=145084.msg1867988#msg1867988">Quote 
+from: brad.bartels on May 04, 2011, 07:50:58 PM</A></DIV></DIV>
+<BLOCKQUOTE class="bbc_standard_quote">For this one, I'm resampling from 48 
+  kHz to 44.1 kHz with r8brain first but leaving it 24-bit. Then I will do 
+  everything I normally do in Audacity (normalize, try toremove any offending 
+  noises, split tracks, etc.) and then export like I normally do. That should 
+  work?</BLOCKQUOTE>
+<DIV class="quotefooter">
+<DIV class="botslice_quote"></DIV></DIV><BR>Sure. Technically it's the 
+resampling that is your hiccup with the extra gaps at the end of tracks. So 
+doing that outside of Audacity resolves that. (or hell, before export works 
+too).<BR><BR>
+<DIV class="quoteheader">
+<DIV class="topslice_quote"><A href="http://taperssection.com/index.php?topic=145084.msg1867988#msg1867988">Quote 
+from: brad.bartels on May 04, 2011, 07:50:58 PM</A></DIV></DIV>
+<BLOCKQUOTE class="bbc_standard_quote">I haven't been using labels to split 
+  into tracks (didn't actually realize you could). I normally put my cursor 
+  where I want the track split and select everything between cursor and end and 
+  then split. Sounds like labels may be easier. Appreciate all the help and 
+  feedback. If it doesn't work, I'll probably be back;)<BR></BLOCKQUOTE>
+<DIV class="quotefooter">
+<DIV class="botslice_quote"></DIV></DIV><BR>yeah, read up on labels. That's one 
+of the things that really improved in 1.3.x land in my experience. You can even 
+set them to cut on CD sector boundaries too. Like I said, it's a great program, 
+just a lot of quirks.<BR><BR>
+<DIV class="quoteheader">
+<DIV class="topslice_quote"><A href="http://taperssection.com/index.php?topic=145084.msg1867999#msg1867999">Quote 
+from: willndmb on May 04, 2011, 09:12:14 PM</A></DIV></DIV>
+<BLOCKQUOTE class="bbc_standard_quote">
+  <DIV class="quoteheader">
+  <DIV class="topslice_quote"><A href="http://taperssection.com/index.php?topic=145084.msg1867871#msg1867871">Quote 
+  from: page on May 04, 2011, 02:27:48 PM</A></DIV></DIV>
+  <BLOCKQUOTE class="bbc_alternate_quote">
+    <DIV class="quoteheader">
+    <DIV class="topslice_quote"><A href="http://taperssection.com/index.php?topic=145084.msg1867862#msg1867862">Quote 
+    from: willndmb on May 04, 2011, 02:12:40 PM</A></DIV></DIV>
+    <BLOCKQUOTE class="bbc_standard_quote">the safest way i found is to do any 
+      edits like amplify in the original file<BR>change the sample/bit 
+      rates<BR>export<BR>open the new file<BR>track it out <BR>export 
+    multi<BR></BLOCKQUOTE>
+    <DIV class="quotefooter">
+    <DIV class="botslice_quote"></DIV></DIV><BR>Be careful about dither. 
+    Audacity dithers <EM>regardless</EM> of change in bitdepth (or 
+    <EM>direction</EM> of bitdepth) if you've set it to dither on export. So 
+    unless you're flipping that setting deep in the preferences menu each time, 
+    you're dithering twice at 16bit.<BR><BR>It's a handy program, and I can't 
+    find anything better at it's price point, but it has a ton of quirks like 
+    that.<BR></BLOCKQUOTE>
+  <DIV class="quotefooter">
+  <DIV class="botslice_quote"></DIV></DIV>hmmm<BR>i most likey am doing it twice 
+  then<BR>not sure what kind of effect it would have doing it twice, but it 
+  sounds ok on playback<BR>guess i will get in the habit of checking that out 
+  too<BR></BLOCKQUOTE>
+<DIV class="quotefooter">
+<DIV class="botslice_quote"></DIV></DIV><BR>You're just getting extra dither 
+noise. When the band is raging, you won't notice, but if it's really quiet and 
+you turn the stereo up you have a greater likelihood.<BR><BR>You're not the 
+first who's done this, nor the last. I wish Audacity embraced dither settings 
+like every other editor but they dont.&nbsp; <IMG class="smiley" title="Undecided" 
+border="0" alt=":-\" 
+src="resampling%20in%20Audacity_files/undecided.gif"></DIV></DIV></DIV>
+<DIV class="moderatorbar">
+<DIV id="modified_1868047" class="smalltext modified"></DIV>
+<DIV class="smalltext reportlinks"><IMG border="0" alt="" src="resampling%20in%20Audacity_files/ip.gif">
+								Logged							</DIV>
+<DIV id="msg_1868047_signature" class="signature">"This is a common practice we 
+have on the bus; debating facts that we could easily find through printed 
+material. It's like, how far is it today? I think it's four hours, and someone 
+else comes in at 11 hours, and well, then we'll... just... talk about it..." - 
+Jeb Puryear<BR><BR>"Nostalgia ain't what it used to be." - Jim 
+Williams<BR><BR>“If a thing like this is worth doing at all, it’s worth doing 
+right. We’ll need some decent equipment and plenty of cash on the line—if only 
+for drugs and a super-sensitive tape recorder, for the sake of a permanent 
+record.” - Raoul Duke</DIV></DIV></DIV><SPAN 
+class="botslice"><SPAN></SPAN></SPAN></DIV>
+<HR class="post_separator">
+</FORM></DIV><A id="lastPost"></A>
+<DIV class="pagesection">
+<DIV class="buttonlist align_right">
+<UL>
+  <LI><A href="http://taperssection.com/index.php?action=printpage;topic=145084.0" 
+  rel="new_win nofollow"><SPAN class="last">Print</SPAN></A></LI></UL></DIV>
+<DIV class="pagelinks align_left">Pages: [<STRONG>1</STRONG>]   &nbsp;&nbsp;<A 
+href="http://taperssection.com/index.php?topic=145084.0#top"><STRONG>Go 
+Up</STRONG></A></DIV>
+<DIV class="nextlinks_bottom"><A href="http://taperssection.com/index.php?topic=145084.0;prev_next=prev#new">« 
+previous</A> <A href="http://taperssection.com/index.php?topic=145084.0;prev_next=next#new">next 
+»</A></DIV></DIV>
+<DIV class="navigate_section">
+<UL>
+  <LI><A 
+  href="http://taperssection.com/index.php"><SPAN>Taperssection.com</SPAN></A>&nbsp;»
+  			</LI>
+  <LI><A href="http://taperssection.com/index.php#c2"><SPAN>Technical 
+  Help</SPAN></A>&nbsp;»			</LI>
+  <LI><A 
+  href="http://taperssection.com/index.php?board=5.0"><SPAN>Post-Processing and 
+  Computers / Internet Devices &amp; Related Activity</SPAN></A>&nbsp;»			</LI>
+  <LI class="last">Topic: 				<A href="http://taperssection.com/index.php?topic=145084.0"><SPAN>resampling 
+  in Audacity?</SPAN></A></LI></UL></DIV>
+<DIV id="moderationbuttons"></DIV>
+<DIV style="text-align: right;" id="display_jump_to" 
+class="plainbox">&nbsp;</DIV><BR class="clear">
+<SCRIPT type="text/javascript" src="resampling%20in%20Audacity_files/topic.js"></SCRIPT>
+
+<SCRIPT type="text/javascript"><!-- // --><![CDATA[
+					if ('XMLHttpRequest' in window)
+					{
+						var oQuickModify = new QuickModify({
+							sScriptUrl: smf_scripturl,
+							bShowModify: true,
+							iTopicId: 145084,
+							sTemplateBodyEdit: '\n\t\t\t\t\t\t\t\t<div id="quick_edit_body_container" style="width: 90%">\n\t\t\t\t\t\t\t\t\t<div id="error_box" style="padding: 4px;" class="error"><' + '/div>\n\t\t\t\t\t\t\t\t\t<textarea class="editor" name="message" rows="12" style="width: 100%; margin-bottom: 10px;" tabindex="1">%body%<' + '/textarea><br />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="cdd193c4e61" value="fd56359f8426e7a58026505923a24afc" />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="topic" value="145084" />\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="msg" value="%msg_id%" />\n\t\t\t\t\t\t\t\t\t<div class="righttext">\n\t\t\t\t\t\t\t\t\t\t<input type="submit" name="post" value="Save" tabindex="2" onclick="return oQuickModify.modifySave(\'fd56359f8426e7a58026505923a24afc\', \'cdd193c4e61\');" accesskey="s" class="button_submit" />&nbsp;&nbsp;<input type="submit" name="cancel" value="Cancel" tabindex="3" onclick="return oQuickModify.modifyCancel();" class="button_submit" />\n\t\t\t\t\t\t\t\t\t<' + '/div>\n\t\t\t\t\t\t\t\t<' + '/div>',
+							sTemplateSubjectEdit: '<input type="text" style="width: 90%;" name="subject" value="%subject%" size="80" maxlength="80" tabindex="4" class="input_text" />',
+							sTemplateBodyNormal: '%body%',
+							sTemplateSubjectNormal: '<a hr' + 'ef="http://taperssection.com/index.php' + '?topic=145084.msg%msg_id%#msg%msg_id%" rel="nofollow">%subject%<' + '/a>',
+							sTemplateTopSubject: 'Topic: %subject% &nbsp;(Read 5557 times)',
+							sErrorBorderStyle: '1px solid red'
+						});
+
+						aJumpTo[aJumpTo.length] = new JumpTo({
+							sContainerId: "display_jump_to",
+							sJumpToTemplate: "<label class=\"smalltext\" for=\"%select_id%\">Jump to:<" + "/label> %dropdown_list%",
+							iCurBoardId: 5,
+							iCurBoardChildLevel: 0,
+							sCurBoardName: "Post-Processing and Computers / Internet Devices &amp; Related Activity",
+							sBoardChildLevelIndicator: "==",
+							sBoardPrefix: "=> ",
+							sCatSeparator: "-----------------------------",
+							sCatPrefix: "",
+							sGoButtonLabel: "go"
+						});
+
+						aIconLists[aIconLists.length] = new IconList({
+							sBackReference: "aIconLists[" + aIconLists.length + "]",
+							sIconIdPrefix: "msg_icon_",
+							sScriptUrl: smf_scripturl,
+							bShowModify: true,
+							iBoardId: 5,
+							iTopicId: 145084,
+							sSessionId: "fd56359f8426e7a58026505923a24afc",
+							sSessionVar: "cdd193c4e61",
+							sLabelIconList: "Message Icon",
+							sBoxBackground: "transparent",
+							sBoxBackgroundHover: "#ffffff",
+							iBoxBorderWidthHover: 1,
+							sBoxBorderColorHover: "#adadad" ,
+							sContainerBackground: "#ffffff",
+							sContainerBorder: "1px solid #adadad",
+							sItemBorder: "1px solid #ffffff",
+							sItemBorderHover: "1px dotted gray",
+							sItemBackground: "transparent",
+							sItemBackgroundHover: "#e0e0f0"
+						});
+					}
+				// ]]></SCRIPT>
+<!--Footers--><!--End Footers--></DIV>
+<DIV style="display: none;" id="footer">
+<DIV class="footerarea">
+<DIV id="footer_section">
+<DIV class="frame"></DIV></DIV></DIV></DIV></DIV></DIV>
+<DIV class="taperfooter">
+<P><A href="http://taperssection.com/index.php?action=.xml;type=rss">RSS</A> |   
+		<A href="http://taperssection.com/index.php?wap2">Mobile</A><BR>Page created 
+in 0.112 seconds with 33 queries.<BR>© 2002-2013 Taperssection.com<BR>      
+Powered by <A href="http://www.simplemachines.org/" 
+target="_blank">SMF</A><BR><SPAN class="foxtrotfooter"><A href="http://www.foxtrotmedia.com/about-us/">Website 
+Design</A> by Foxtrot Media, Inc., a <A 
+href="http://www.foxtrotmedia.com/">Baltimore Website Company</A></SPAN><SPAN 
+class="foxtrotua">
+<SCRIPT type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-3588027-6']);
+	  _gaq.push(['_trackPageview']);
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</SCRIPT>
+</SPAN><BR><SPAN style="display: none;" class="copyright"><SPAN style="font-family: Verdana, Arial, sans-serif; display: inline; visibility: visible;" 
+class="smalltext"><A class="new_win" title="Simple Machines Forum" href="http://www.simplemachines.org/" 
+target="_blank">Powered by SMF 2.0 RC3</A> | <A class="new_win" title="Free Forum Software" 
+href="http://www.simplemachines.org/about/copyright.php" target="_blank">SMF © 
+2006–2010, Simple Machines LLC</A></SPAN></SPAN></P></DIV></BODY></HTML>

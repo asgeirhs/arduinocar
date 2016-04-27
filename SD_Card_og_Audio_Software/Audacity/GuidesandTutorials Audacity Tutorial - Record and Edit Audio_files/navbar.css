@@ -1,0 +1,21 @@
+.Navigation {
+	min-width: 150px;
+}
+#PageWrapper #NavColumn .Navigation h3 {
+	margin-right: -4px; margin-left: -4px;
+}
+.Navigation h3 {
+	margin: 0px; padding: 0px; border: 0px currentColor; text-align: left; color: rgb(0, 0, 0); line-height: 23px; letter-spacing: 0px; font-family: Verdana, Geneva, sans-serif; font-size: 18px; font-style: normal; font-weight: bold; text-decoration: none; display: block;
+}
+#PageWrapper #NavColumn .Navigation ul {
+	margin-right: -4px; margin-left: -4px;
+}
+.Navigation ul {
+	margin: 0px; padding: 0px; border: 0px currentColor; width: 150px; list-style-type: disc;
+}
+.Navigation li {
+	margin: 0px; padding: 0px; border: 0px currentColor; text-align: left; font-variant: normal; display: block;
+}
+.Navigation a {
+	background: url("../image-files/navimage.gif") no-repeat; font: 13px/25px Verdana, Geneva, sans-serif; margin: 0px; padding: 0px; border: 0px currentColor; height: 25px; text-align: center; color: rgb(255, 255, 255); letter-spacing: 0px; overflow: hidden; text-decoration: none; display: block;
+}

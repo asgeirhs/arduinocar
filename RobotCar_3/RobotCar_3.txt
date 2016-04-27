@@ -1,0 +1,19 @@
+//******** Skapa servopúls kvarðaðan í 20us einingum, út frá stefnu í gráðum **************
+
+//Servopúlsinn umreiknaður úr gráðum í us.  -90°-> 600us 0°-> 1500us +90°->2400us
+//Síðan er púlsbreiddin umreiknuð í fjölda interrupta er koma á 20us fresti
+int reiknaPulsBreidd(int gradur)  //+1, snunAtt=-1 ef Servo orvhentur      
+{  
+    int temp;
+    if(gradur<-90)      //koma í veg fyrir að servo eyðileggist
+       gradur = -90;
+    else if(gradur>90)
+      gradur = 90;
+   if(snuningsAtt==-1)  //Sumir servomotorar eru orvhentir
+      gradur=gradur*-1;   
+   temp=1500+gradur*10; //Hér er púlsbreiddin nú komin í us
+   
+   temp=temp*5/10;      //temp=temp/20  eða temp=temp*0,05 sem gerir sama                 
+   temp=(temp+5)/10;    //leggja 5 við fyrir deilingu afrúnnar töluna                    
+   return temp;         
+}
