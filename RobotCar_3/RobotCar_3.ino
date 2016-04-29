@@ -21,10 +21,10 @@ void setup()
     pinMode(motorHgir_,OUTPUT);
   
     pinMode(servo_,OUTPUT);
-  
     pinMode(sonarTrigger_,OUTPUT);
     pinMode(sonarEcho_,INPUT_PULLUP); //Allir inngangar verda að hafa pullup vidnam 
-                                      //her notum við internal pullup (20kohm) orgjorvans 
+                                     //her notum við internal pullup (20kohm) orgjorvans 
+                                     
     pinMode(TXspilari_,OUTPUT);
     pinMode(RXspilari_,INPUT_PULLUP); //Notum aftur Internal pullup vidnam
     
@@ -40,7 +40,7 @@ void setup()
     mySerial.begin(9600);
     delay(100);
     //mp3_set_volume(25);
-    mp3_set_volume(20);
+    mp3_set_volume(0);
     delay(100); 
      mp3_play_track(17);  // 17. Bíll í gang (gamli bíllinn)
      delay(5000); 
@@ -53,6 +53,10 @@ void setup()
 //*************************** Keyrslulykkjan **********************
 void loop()
 {
+
+sensorValue = analogRead(sonarEcho);
+Serial.println(sensorValue);
+  
     pulsBreidd=reiknaPulsBreidd(-10);
     delay(100);
     startCar();
@@ -69,6 +73,8 @@ void loop()
     
     while(lengd() < 50)    
     {   
+      slowCar();
+      
         if(lengd()<30)
         {
            backCar();  
@@ -84,7 +90,9 @@ void loop()
         lengdH=lengd();
         delay(200);
         pulsBreidd=reiknaPulsBreidd(-10);  //Stefna beint fram
-        delay(400);        
+        delay(400);   
+
+             
         if(lengdV > lengdH)
         {          
           while(lengd()<100)
@@ -94,7 +102,7 @@ void loop()
              breakCar();
              delay(20);
           }
-        }
+         }
         else
         {
            while(lengd() <100)

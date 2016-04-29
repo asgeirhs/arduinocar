@@ -99,6 +99,15 @@ void startCar()
    analogWrite(motorVpwm_,VgrunnV);
    analogWrite(motorHpwm_,VgrunnH); 
 }
+
+void slowCar()
+{
+   digitalWrite(motorVgir_,HIGH);
+   digitalWrite(motorHgir_,LOW);
+   analogWrite(motorVpwm_,100);
+   analogWrite(motorHpwm_,100); 
+}
+
 void breakCar()
 {
     analogWrite(motorVpwm_,0);
