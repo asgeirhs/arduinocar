@@ -123,7 +123,7 @@ void stopCar()
    analogWrite(motorVpwm_,180);
    analogWrite(motorHpwm_,180);
    delay(100);
-   analogWrite(motorVpwn_,130);
+   analogWrite(motorVpwm_,130);
    analogWrite(motorHpwm_,130);
    delay(100);
    analogWrite(motorVpwm_,100);
