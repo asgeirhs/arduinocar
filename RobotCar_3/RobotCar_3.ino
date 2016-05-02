@@ -42,11 +42,11 @@ void setup()
     mySerial.begin(9600);
     delay(100);
     //mp3_set_volume(25);
-    mp3_set_volume(0); //set volume á að vera 20
+    mp3_set_volume(25); //set volume á að vera 20
     delay(100); 
-     mp3_play_track(17);  // 17. Bíll í gang (gamli bíllinn)
+     mp3_play_track(4);  // 4. Bíll í gang (gamli bíllinn)
      delay(5000); 
-     mp3_play_track(1);     // 1. Riding along in my automobile 
+     mp3_play_track(1);     // 1. Gary Numan - Cars 
      lagNr=2;
      time=millis();         //Setur time breytuna á tíma liðinn frá starti
 
@@ -71,7 +71,7 @@ void loop()
 
     if((millis()-time)>= 30000) //Spila lögin í 30 sek
     {
-       if(lagNr ==17)
+       if(lagNr ==4)
           lagNr=1;
        mp3_play_track(lagNr++); 
            time=millis();                               
