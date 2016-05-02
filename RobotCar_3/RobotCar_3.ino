@@ -44,8 +44,8 @@ void setup()
     //mp3_set_volume(25);
     mp3_set_volume(25); //set volume á að vera 20
     delay(100); 
-     mp3_play_track(5);  // 5. Bíll í gang (gamli bíllinn)
-     delay(5000); 
+     mp3_play_track(4);  // 4. 
+     delay(10000); 
      mp3_play_track(1);     // 1. Gary Numan - Cars 
      lagNr=2;
      time=millis();         //Setur time breytuna á tíma liðinn frá starti
@@ -68,7 +68,7 @@ void loop()
        mp3_play_track(lagNr++); 
            time=millis();    
   }
-  while (lengd() > 70)
+  while (lengd() > 100)
   {
     lengdCheck = lengd();
     delay(3000);
@@ -100,7 +100,6 @@ void loop()
     }
     else
     {
-
       while (lengd() < 100)
       {
         driveRight();
@@ -109,10 +108,9 @@ void loop()
         delay(20);
       }
     }
-
   }
 
-  while (lengd() < 70)
+  while (lengd() < 100)
   {
     if (lengd() < 30)
     {
