@@ -44,7 +44,7 @@ void setup()
     //mp3_set_volume(25);
     mp3_set_volume(25); //set volume á að vera 20
     delay(100); 
-     mp3_play_track(4);  // 4. Bíll í gang (gamli bíllinn)
+     mp3_play_track(5);  // 5. Bíll í gang (gamli bíllinn)
      delay(5000); 
      mp3_play_track(1);     // 1. Gary Numan - Cars 
      lagNr=2;
