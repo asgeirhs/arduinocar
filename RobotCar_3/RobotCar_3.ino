@@ -42,7 +42,7 @@ void setup()
     mySerial.begin(9600);
     delay(100);
     //mp3_set_volume(25);
-    mp3_set_volume(25); //set volume á að vera 20
+    mp3_set_volume(0); //set volume á að vera 20
     delay(100); 
      mp3_play_track(4);  // 4. 
      delay(10000); 
@@ -71,11 +71,11 @@ void loop()
   while (lengd() > 100)
   {
     lengdCheck = lengd();
-    delay(3000);
+    delay(5000);
     if (lengd() < (lengdCheck + 10) && lengd() > (lengdCheck - 10))
     {
       backCar();
-      delay(600);  //Bakka í 600ms
+      delay(1000);  //Bakka í 600ms
     }
     stopCar();
     pulsBreidd = reiknaPulsBreidd(-80);
