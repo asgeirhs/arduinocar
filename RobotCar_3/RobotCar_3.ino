@@ -4,15 +4,17 @@
 // library can't include another library that includes another library   *
 // and so on.                                                            *
 // Athugid ad setja snuningsAtt i RobotFunctions.h a -1 ef servomotor    *
-// er orvhentur     test     aron       rauðhærður                                          *
+// er orvhentur                                                          *
 //***********************************************************************/
 #include "Arduino.h"
 #include <TimerOne.h>
 #include "RobotFunctions.h"
 #include <SoftwareSerial.h>
 #include "MyDFPlayer.h"
+      
 
 //************************** uppsetning á forritinu *****************
+
 void setup() 
 { 
     pinMode(motorVpwm_,OUTPUT);
@@ -21,10 +23,10 @@ void setup()
     pinMode(motorHgir_,OUTPUT);
   
     pinMode(servo_,OUTPUT);
+  
     pinMode(sonarTrigger_,OUTPUT);
     pinMode(sonarEcho_,INPUT_PULLUP); //Allir inngangar verda að hafa pullup vidnam 
-                                     //her notum við internal pullup (20kohm) orgjorvans 
-                                     
+                                  //her notum við internal pullup (20kohm) orgjorvans                   
     pinMode(TXspilari_,OUTPUT);
     pinMode(RXspilari_,INPUT_PULLUP); //Notum aftur Internal pullup vidnam
     
@@ -40,13 +42,14 @@ void setup()
     mySerial.begin(9600);
     delay(100);
     //mp3_set_volume(25);
-    mp3_set_volume(0);
+    mp3_set_volume(0); //set volume á að vera 20
     delay(100); 
      mp3_play_track(17);  // 17. Bíll í gang (gamli bíllinn)
      delay(5000); 
      mp3_play_track(1);     // 1. Riding along in my automobile 
      lagNr=2;
      time=millis();         //Setur time breytuna á tíma liðinn frá starti
+
      
 }//End of setup *********
 
@@ -54,14 +57,18 @@ void setup()
 void loop()
 {
 
-sensorValue = analogRead(sonarEcho);
-Serial.println(sensorValue);
-  
+
+
+
+
     pulsBreidd=reiknaPulsBreidd(-10);
     delay(100);
     startCar();
     delay(100); 
     
+
+
+
     if((millis()-time)>= 30000) //Spila lögin í 30 sek
     {
        if(lagNr ==17)
@@ -71,10 +78,8 @@ Serial.println(sensorValue);
     }
     
     
-    while(lengd() < 50)    
-    {   
-      slowCar();
-      
+    while(lengd() < 70)    
+    {         
         if(lengd()<30)
         {
            backCar();  
@@ -90,9 +95,7 @@ Serial.println(sensorValue);
         lengdH=lengd();
         delay(200);
         pulsBreidd=reiknaPulsBreidd(-10);  //Stefna beint fram
-        delay(400);   
-
-             
+        delay(400);        
         if(lengdV > lengdH)
         {          
           while(lengd()<100)
@@ -102,7 +105,7 @@ Serial.println(sensorValue);
              breakCar();
              delay(20);
           }
-         }
+        }
         else
         {
            while(lengd() <100)
@@ -112,7 +115,15 @@ Serial.println(sensorValue);
                breakCar();
                delay(20);
            }
-        }          
+        }  
+      
    }
+   
+
+  
+
+  
 }//End of loop *********************
+
+
 

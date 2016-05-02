@@ -11,7 +11,7 @@ int motorHpwm;     //Geymir stöðu motorH  (analogWrite(motorHpwm_,motorHpwm);)
 int VgrunnV=125;   //Upphafsgildi mótoranna
 int VgrunnH=125;
 */
-int VgrunnV=140;   //Upphafsgildi mótoranna
+int VgrunnV=150;   //Upphafsgildi mótoranna
 int VgrunnH=150;
 
 int TXspilari_=4;  //Sendir skipanir til mp3 spilarans
@@ -25,6 +25,8 @@ int period=1000;    //Geymir útreiknaðan umferðatíma (1000*20us=20ms)
 int sonarTrigger_=7;       //Sendir 10us breiðan 40kHz sónarpúls
 int sonarEcho_=8;          //Tekur á móti SONAR púlsinum
 unsigned int sonarLengd;   //Geymir mælda (reiknaða) lengd að endurvarpinu
+
+
 int lagNr;                 //Synir hvaða lag er spilad
 unsigned int lengdV;
 unsigned int lengdH;
@@ -104,8 +106,8 @@ void slowCar()
 {
    digitalWrite(motorVgir_,HIGH);
    digitalWrite(motorHgir_,LOW);
-   analogWrite(motorVpwm_,100);
-   analogWrite(motorHpwm_,100); 
+   analogWrite(motorVpwm_,50);
+   analogWrite(motorHpwm_,50); 
 }
 
 void breakCar()
