@@ -143,11 +143,10 @@ void stopCar()
 }
 void backCar()
 {
-   stopCar();
-   delay(500);
+   delay(100);
    analogWrite(motorVpwm_,0);
    analogWrite(motorHpwm_,0);
-   delay(100);
+   delay(500);
    analogWrite(motorVpwm_,30);
    analogWrite(motorHpwm_,30);
    delay(100);
