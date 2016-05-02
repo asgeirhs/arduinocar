@@ -145,6 +145,27 @@ void backCar()
 {
    stopCar();
    delay(500);
+   analogWrite(motorVpwm_,0);
+   analogWrite(motorHpwm_,0);
+   delay(100);
+   analogWrite(motorVpwm_,30);
+   analogWrite(motorHpwm_,30);
+   delay(100);
+   analogWrite(motorVpwm_,50);
+   analogWrite(motorHpwm_,50); 
+   delay(100);
+   analogWrite(motorVpwm_,100);
+   analogWrite(motorHpwm_,100);
+   delay(100);
+   analogWrite(motorVpwm_,130);
+   analogWrite(motorHpwm_,130);
+   delay(100);
+   analogWrite(motorVpwm_,150);
+   analogWrite(motorHpwm_,150);
+    delay(100);
+   analogWrite(motorVpwm_,180);
+   analogWrite(motorHpwm_,180);
+   delay(100);
    digitalWrite(motorVgir_,LOW);
    digitalWrite(motorHgir_,HIGH);
    analogWrite(motorVpwm_,VgrunnV);
