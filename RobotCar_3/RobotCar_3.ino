@@ -49,7 +49,7 @@ void setup()
      mp3_play_track(1);     // 1. Gary Numan - Cars 
      lagNr=2;
      time=millis();         //Setur time breytuna á tíma liðinn frá starti
-
+      timeX = millis();
 }//End of setup *********
 
 //*************************** Keyrslulykkjan **********************
@@ -60,7 +60,8 @@ void loop()
   delay(100);
   startCar();
   delay(100);
-
+  lengdCheck = lengd();
+timeX = millis();
   if ((millis() - time) >= 30000) //Spila lögin í 30 sek
   {
     if(lagNr ==4)
@@ -68,16 +69,20 @@ void loop()
        mp3_play_track(lagNr++); 
            time=millis();    
   }
-  while (lengd() > 70)
-  {
-    lengdCheck = lengd();
-    startCar();
-    delay(2000);
-    if (lengd() < (lengdCheck + 10) && lengd() > (lengdCheck - 10))
+  
+while (lengd() < 100)
+    if (millis() <= (timeX + 3000))
     {
+      if (lengd() < (lengdCheck + 10) && lengd() > (lengdCheck - 10))
+      {
       backCar();
       delay(1000);  //Bakka í 1000ms
+      driveLeft();
+      delay(600);
+      }
+      
     }
+       
     stopCar();
     pulsBreidd = reiknaPulsBreidd(-80);
     delay(1000); //Servo motorar eru misjafnlega hraðvirkir
@@ -109,18 +114,9 @@ void loop()
         delay(20);
       }
     }
-  }
-
-  while (lengd() < 70)
+ 
+  
   {
-    lengdCheck = lengd();
-    startCar();
-    delay(2000);
-    if (lengd() < (lengdCheck + 10) && lengd() > (lengdCheck - 10))
-    {
-      backCar();
-      delay(1000);  //Bakka í 1000ms
-    }
     if (lengd() < 30)
     {
       backCar();

@@ -32,6 +32,7 @@ unsigned int lengdV;
 unsigned int lengdH;
 unsigned int lengdMax=0;
 unsigned int lengdCheck;
+unsigned int timeX;
 
 int cnt_SONAR=0;     //Geymir stöðu SONAR teljara interrupt fallsins
 int cnt_SERVO=0;     //Geymir stöðu SERVO teljara interrupt fallsins
